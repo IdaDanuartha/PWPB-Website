@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Java Script</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Java Script</h1>
+        <a href="">
+            <img src="img/javascript.png" alt="gambar Javascript" width="650px" height="300px">
+        </a>
+        
+        <p>Javascript adalah bahasa pemrograman yang wajib kamu pelajari 
+        jika ingin mendalami dunia web development.</p>
+        <p>Saat ini javascript tidak hanya digunakan di sisi client 
+        (browser) saja. Javascript juga digunakan pada server, console,
+        program desktop, mobile, IoT, game, dan lain-lain.</p>
+        <br>
+        <p>Pada artikel ini, kita akan belajar Javascript dari dasar. 
+        Mulai dari pengenalan Javascript, hingga membuat program 
+        pertama dengan Javascript.</p>
+        <br><br>
+
+        <h2>Apa itu Javascript?</h2>
+        <img src="img/javascript2.jpg" alt="gambar Javascript">
+
+        <p>Javascript adalah bahasa pemrograman yang awalnya dirancang 
+            untuk berjalan di atas browser. Namun, seiring perkembangan 
+            zaman, javascript tidak hanya berjalan di atas browser saja. 
+            Javascript juga dapat digunakan pada sisi Server, Game, IoT, 
+            Desktop, dsb.</p>
+            
+        <p>Javascript awalnya bernama Mocha, lalu berubah menjadi 
+            LiveScript saat browser Netscape Navigator 2.0 rilis versi 
+            beta (September 1995). Namun, setelah itu dinamai ulang menjadi
+            Javascript.</p>
+
+        <p>Dari kesuksesan Javascript, Microsoft mengadopsi
+            teknologi serupa. Microsoft membuat ‘Javascript’ versi mereka
+            sendiri bernama JScript. Lalu di tanam pada Internet Explorer
+            3.0. Hal ini mengakibatkan ‘ perang browser’, karena JScript 
+            milik Microsoft berbeda dengan Javascript racikan Netscape.
+            Akhirnya pada tahun 1996, Netscape mengirimkan standarisasi 
+            ECMA-262 ke Ecma International. Sehingga lahirlah standarisasi 
+            kode Javascript bernama ECMAScript atau ES. Saat ini ECMAScript
+            sudah mencapai versi 8 (ES8).</p>
+
+        <br>
+        <h2>Peralatan Untuk Belajar Javascript</h2>
+        <p>Apa saja peralatan yang harus disiapkan untuk belajar Javascript?</p>
+
+            <ol>
+                <li>Web Browser (Google Chrome, Firefox, Opera, dll)</li>
+                <li>Teks Editor (rekomendasi: VS Code)</li>
+            </ol>
+
+        <br>
+        <h2>Membuat Program Javascript Pertama</h2>
+        <p>Silahkan buka teks editor, kemudian buat file beru bernama 
+            hello_world.html dan isi dengan kode berikut: </p>
+        <img src="img/kodejs1.png" alt="syntaks Javascript" width="600px" height="330px">
+
+        <p>Silahkan disimpan dengan nama hello_world.html (ctrl + s), kemudian buka file tersebut dengan web browser.</p>
+        <h4>Maka jika ditampilkan di browser hasilnya akan jadi seperti ini :</h4>
+        <img src="img/gbr-hello-world.png" alt="Menampilkan hello world di browser">
+        <p>Tunggu dulu... bukankah kita tadi menulis perintah 
+            <b>console.log("Saya belajar Javascript");</b></p>
+        <p>Lalu, mengapa tidak ditampilkan?</p>
+
+        <p>Karena perintah atau fungsi console.log() akan menampilkan pesan ke dalam 
+            console javascript. Sedangkan perintah document.write() berfungsi untuk 
+            menulis ke dokumen HTML, maka dia akan ditampilkan kesana.</p>
+
+        <P>Sekarang coba saja buka console javascript.</P>
+            
+        <p>Maka kita akan melihat pesan <b>"Saya belajar Javascript" : </b></p>
+        <img src="img/hello-world-console.png" alt="hello-world-console">
+
+        <br><br>
+        <h2>Bagaimana Cara Menulis Kode Javascript di HTML?</h2>
+        <p>Pada contoh di atas, kita sudah menulis kode javascript di dalam HTML.
+
+        <p>Cara tersebut merupakan cara penulisan embeded (ditempel).</p>
+            
+        <p>Masih ada beberapa cara lagi yang perlu kita ketahui:</p>
+            
+        <ol>
+            <li>Embed (Kode Javascript ditempel langsung pada HTML. Contoh: yang tadi)</li>
+            <li>Inline (kode Javascript ditulis pada atribut HTML)</li>
+            <li>Eksternal (Kode Javascript ditulis terpisah dengan file HTML)</li>
+        </ol>
+
+        <p>Oke, mari kita lihat contoh berikut ini...</p>
+
+            <h3>1. Penulisan kode Javascript dengan Embed</h3>
+            <p>Pada cara ini, kita menggunakan tag <b>script</b> untuk menempelkan (embed) 
+            kode Javascript pada HTML. Tag ini dapat ditulis di dalam tag <b>head</b>
+            dan <b>body</b>.</p>
+            
+            <h4>Contoh : </h4>
+            <img src="img/kodejs2.png" alt="Syntax JS pada html" width="600px" height="330px">
+
+            <p>Mana yang lebih bagus, ditulis di dalam <b>head</b> atau <b>body</b> ?</p>
+
+            <p>Banyak yang merekomendasikan menuliskannya di dalam <b>body</b>, 
+            karena akan membuat web di-load lebih cepat.</p>
+
+            <br>
+            <h3>2. Penulisan kode Javascript dengan Inline</h3>
+            <p>Pada cara ini, kita akan menulis kode javascript di dalam atribut HTML. 
+            Cara ini biasanya digunakan untuk memanggil suatu fungsi pada event tertentu.</p>
+            <p>Misal: saat link diklik.</p>
+            
+            <h4>Contoh :</h4>
+            <img src="img/kodejs3.png" alt="Kode Javascript" width="480px" height="90px">
+            <br>
+            <p>atau bisa juga seperti ini :</p>
+            <img src="img/kodejs4.png" alt="Kode Javascript" width="480px" height="90px">
+            <p>Hasilnya :</p>
+            <img src="img/inline-js.gif" alt="tampilan kode javascript pada browser">
+
+            <p>Pada atribut onclick dan href kita menuliskan fungsi javascript di sana. Atribut 
+            on click merupakan atribut HTML untuk menyatakan fungsi yang akan dieksekusi saat 
+            elemen itu diklik.</p>
+            <p>Pada contoh di atas, kita menjalankan fungsi alert(). Fungsi ini merupakan fungsi
+            untuk menampilkan dialog. Lalu pada atribut href, kita juga memanggil fungsi 
+            alert() dengan didahului javascript:</p>
+                
+            <p>Atribut href sebenarnya digunakan untuk mengisi alamat link atau URL. Karena
+                 kita ingin memanggil kode javascript di sana, maka alamat link tersebut kita 
+                 ubah menjadi javascript: lalu diikuti dengan fungsi yang akan dipanggil.</p>
+
+            <br>
+            <h3>3. Penulisan kode Javascript dengan Eksternal</h3>
+            <p>Pada cara ini, kita akan menulis kode javascript secara 
+                terpisah dengan file HTML.<br><br>
+                Cara ini biasanya digunakan pada proyek-proyek besar, 
+                karena diyakini—dengan cara ini—dapat lebih mudah mengelola
+                kode project.<br><br>
+                Mari kita lihat contohnya…<br><br>
+                Kita buat dua file, yaitu: file index.html dan kode-program.js.</p>
+            
+            <h4>Isi dari file kode-program.js :</h4>
+            <img src="img/kode-js5.png" alt="Kode Javascript" width="480px" height="90px">
+
+            <h4>Isi dari file index.html :</h4>
+            <img src="img/kode-program.png" alt="Kode html"  width="500px" height="280px">
+
+            <h4>Hasilnya :</h4>
+            <img src="img/gbr-hasil.png" alt="Gambar Hasil" width="500px">
+
+            <p>Pada contoh di atas, kita menulis kode javascript terpisah
+            dengan kode HTML.<br><br>
+            Lalu, pada kode HTML… <br><br>
+            Kita menyisipkannya dengan memberikan atribut src pada tag <b>script</b><br><br>.
+            <img src="img/kode-program2.png" alt="Kode Program"><br>
+            Maka, apapun yang ada di dalam file kode-program.js akan dapat dibaca dari file index.html.</p>
+
+            <p>Selamat 🎉<br><br>
+            Kamu sudah mengenal javascript dan sudah membuat program 
+            pertama dengan Javascript.</p>
+
+            <h4>Materi Selanjutnya?</h4>
+    </div>
+</body>
+</html>
