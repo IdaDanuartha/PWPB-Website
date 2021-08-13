@@ -204,14 +204,14 @@ label{
     }
 }
 
-@media (max-width: 560px){
+@media (max-width: 575px){
     body{
-       margin-top: 100px; 
-    }
-
+        margin-top: 100px; 
+     }
+ 
     header{
-        height: 100px;
-    }
+         height: 100px;
+     }
 
     .content .info h2{
         font-size: 38px;
@@ -220,12 +220,13 @@ label{
     }
 
     .content .info h2 span{
+        
         font-size: 30px;
         font-weight: 600;
     }
 
     .content .info p{
-        font-size: 15px;
+        font-size: 16px;
         margin-left: 50px;
         margin-bottom: 50px;
     }
