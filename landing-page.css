@@ -123,6 +123,19 @@ label{
     display: none;
 }
 
+/* Learning */
+
+.fa-html5{
+    color: rgb(255, 136, 0);
+}
+.fa-css3-alt{
+    color: rgb(58, 58, 246);
+}
+
+.fa-js-square{
+    color: rgb(255, 179, 0);
+}
+
 /* Responsive styles */
 @media (max-width: 960px){
     header .nav{
