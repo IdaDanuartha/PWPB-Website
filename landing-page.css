@@ -8,7 +8,7 @@
 }
 
 body{
-    margin-top: 110px;
+    margin-top: 114px;
 }
 
 section{
@@ -32,7 +32,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(172, 171, 171);
+    background-color: rgba(172, 171, 171, 0.9);
     z-index: 5;
 }
 
@@ -205,14 +205,22 @@ label{
 }
 
 @media (max-width: 560px){
+    body{
+       margin-top: 100px; 
+    }
+
+    header{
+        height: 100px;
+    }
+
     .content .info h2{
-        font-size: 40px;
+        font-size: 38px;
         line-height: 40px;
         margin-left: 40px;
     }
 
     .content .info h2 span{
-        font-size: 34px;
+        font-size: 30px;
         font-weight: 600;
     }
 
