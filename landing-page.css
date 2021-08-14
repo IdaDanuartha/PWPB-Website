@@ -8,7 +8,7 @@
 }
 
 body{
-    margin-top: 110px;
+    margin-top: 114px;
 }
 
 section{
@@ -32,7 +32,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(172, 171, 171);
+    background-color: rgba(172, 171, 171, 0.9);
     z-index: 5;
 }
 
@@ -123,6 +123,19 @@ label{
     display: none;
 }
 
+/* Learning */
+
+.fa-html5{
+    color: rgb(255, 136, 0);
+}
+.fa-css3-alt{
+    color: rgb(58, 58, 246);
+}
+
+.fa-js-square{
+    color: rgb(255, 179, 0);
+}
+
 /* Responsive styles */
 @media (max-width: 960px){
     header .nav{
@@ -189,7 +202,7 @@ label{
     .content .info h2{
         font-size: 50px;
         line-height: 50px;
-        margin-left: 100px;
+        margin-left: 60px;
     }
 
     .content .info h2 span{
@@ -204,20 +217,30 @@ label{
     }
 }
 
-@media (max-width: 560px){
+@media (max-width: 575px){
+    body{
+        margin-top: 100px; 
+     }
+ 
+    header{
+         height: 100px;
+     }
+
     .content .info h2{
-        font-size: 40px;
+        font-size: 38px;
         line-height: 40px;
         margin-left: 40px;
     }
 
     .content .info h2 span{
-        font-size: 34px;
+        
+        font-size: 30px;
         font-weight: 600;
     }
 
     .content .info p{
-        font-size: 15px;
+        margin-top: 50px;
+        font-size: 16px;
         margin-left: 50px;
         margin-bottom: 50px;
     }
