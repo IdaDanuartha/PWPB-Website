@@ -1,249 +1,257 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-body{
-    margin-top: 114px;
+body {
+  margin-top: 114px;
 }
 
-section{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-image: url(img/bg-computer2.jpg);
-    background-size: cover;
-    background-position: right center;
-    background-repeat: no-repeat;
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url(img/bg-computer2.jpg);
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
 }
 
-header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(172, 171, 171, 0.9);
-    z-index: 5;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(172, 171, 171, 0.9);
+  z-index: 5;
 }
 
-header .logo{
-    position: relative;
-    color: #000;
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 1px;
+header .logo {
+  position: relative;
+  color: #000;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
-header .nav a{
-    color: #000;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 1px;
-    padding: 2px 15px;
-    border-radius: 20px;
-    transition: 0.3s;
-    transition-property: backround;
+header .nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: backround;
 }
 
-header .nav a:not(:last-child){
-    margin-right: 30px;
+header .nav a:not(:last-child) {
+  margin-right: 30px;
 }
 
-header .nav a:hover{
-    background-color: #fff;
+header .nav a:hover {
+  background-color: #fff;
 }
 
-.content .info h2{
-    color: rgb(80, 78, 78);
-    font-size: 67px;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 2px;
-    line-height: 70px;
-    margin-bottom: 30px;
-    margin-left: 240px;
-    margin-top: 50px;
+.learning {
+  padding-top: 120px;
 }
 
-.content .info h2 span{
-    color: rgb(80, 78, 78);
-    font-size: 50px;
-    font-weight: 500;
-    margin-left: 20px;
+.about {
+  padding-top: 120px;
 }
 
-.content .info p{
-    font-size: 20px;
-    font-weight: 450;
-    margin-bottom: 40px;
-    margin-left: 300px;
+.contact {
+  padding-top: 120px;
 }
 
-.icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+.content .info h2 {
+  color: rgb(80, 78, 78);
+  font-size: 67px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 70px;
+  margin-bottom: 30px;
+  margin-left: 240px;
+  margin-top: 50px;
 }
 
-.icon a{
-    position: relative;
-    color: #222;
-    font-size: 35px;
-    transition: 0.3s;
-    transition-property: transform;
+.content .info h2 span {
+  color: rgb(80, 78, 78);
+  font-size: 50px;
+  font-weight: 500;
+  margin-left: 20px;
 }
 
-.icon a:not(:last-child){
-    margin-right: 40px;
-
+.content .info p {
+  font-size: 20px;
+  font-weight: 450;
+  margin-bottom: 40px;
+  margin-left: 300px;
 }
 
-.icon a:hover{
-    transform: scale(1.3);
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
-label{
-    display: none;
+.icon a {
+  position: relative;
+  color: #222;
+  font-size: 35px;
+  transition: 0.3s;
+  transition-property: transform;
 }
 
-#check{
-    z-index: 3;
-    display: none;
+.icon a:not(:last-child) {
+  margin-right: 40px;
+}
+
+.icon a:hover {
+  transform: scale(1.3);
+}
+
+label {
+  display: none;
+}
+
+#check {
+  z-index: 3;
+  display: none;
 }
 
 /* Learning */
 
-.fa-html5{
-    color: rgb(255, 136, 0);
+.fa-html5 {
+  color: rgb(255, 136, 0);
 }
-.fa-css3-alt{
-    color: rgb(58, 58, 246);
+.fa-css3-alt {
+  color: rgb(58, 58, 246);
 }
 
-.fa-js-square{
-    color: rgb(255, 179, 0);
+.fa-js-square {
+  color: rgb(255, 179, 0);
 }
 
 /* Responsive styles */
-@media (max-width: 960px){
-    header .nav{
-        display: none;
-    }
+@media (max-width: 960px) {
+  header .nav {
+    display: none;
+  }
 
-    label{
-        display: block;
-        font-size: 25px;
-        cursor: pointer;
-        transition: 0.2s;
-        transition-property: color;
-    }
+  label {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+    transition-property: color;
+  }
 
-    label:hover{
-        color: white;
-    }
+  label:hover {
+    color: white;
+  }
 
-    label .close{
-        display: none;
-    }
+  label .close {
+    display: none;
+  }
 
-    #check:checked ~ header .nav{
-        z-index: 2;
-        position: fixed;
-        background: rgba(201, 199, 199, 0.86);
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  #check:checked ~ header .nav {
+    z-index: 2;
+    position: fixed;
+    background: rgba(201, 199, 199, 0.86);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    #check:checked ~ header .nav a{
-        font-size: 30px;
-        font-weight: 600;
-        margin-right: 0;
-        margin-bottom: 50px;
-        letter-spacing: 2px;
-    }
+  #check:checked ~ header .nav a {
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 0;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+  }
 
-    #check:checked ~ header label .open{
-        display: none;
-    }
+  #check:checked ~ header label .open {
+    display: none;
+  }
 
-    #check:checked ~ header label .close{
-        z-index: 2;
-        display: block;
-        position: fixed;
-    }
+  #check:checked ~ header label .close {
+    z-index: 2;
+    display: block;
+    position: fixed;
+  }
 
-    label .open{
-        position: absolute;
-    }
+  label .open {
+    position: absolute;
+  }
 
-    header.logo{
-        position: absolute;
-        bottom: -6px;
-    }
+  header.logo {
+    position: absolute;
+    bottom: -6px;
+  }
 
-    .content .info h2{
-        font-size: 50px;
-        line-height: 50px;
-        margin-left: 60px;
-    }
+  .content .info h2 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-left: 60px;
+  }
 
-    .content .info h2 span{
-        font-size: 40px;
-        font-weight: 600;
-    }
+  .content .info h2 span {
+    font-size: 40px;
+    font-weight: 600;
+  }
 
-    .content .info p{
-        font-size: 15px;
-        margin-left: 110px;
-        margin-bottom: 50px;
-    }
+  .content .info p {
+    font-size: 15px;
+    margin-left: 110px;
+    margin-bottom: 50px;
+  }
 }
 
-@media (max-width: 575px){
-    body{
-        margin-top: 100px; 
-     }
- 
-    header{
-         height: 100px;
-     }
+@media (max-width: 575px) {
+  body {
+    margin-top: 100px;
+  }
 
-    .content .info h2{
-        font-size: 38px;
-        line-height: 40px;
-        margin-left: 40px;
-    }
+  header {
+    height: 100px;
+  }
 
-    .content .info h2 span{
-        
-        font-size: 30px;
-        font-weight: 600;
-    }
+  .content .info h2 {
+    font-size: 38px;
+    line-height: 40px;
+    margin-left: 40px;
+  }
 
-    .content .info p{
-        margin-top: 50px;
-        font-size: 16px;
-        margin-left: 50px;
-        margin-bottom: 50px;
-    }
+  .content .info h2 span {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .content .info p {
+    margin-top: 50px;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
 }
-
-
