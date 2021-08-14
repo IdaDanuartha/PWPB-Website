@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Belajar CSS</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <h1>Pengenalan Dasar CSS untuk Pemula</h1>
 
     <p>CSS adalah bahasa kedua yang harus dipelajari oleh <i>Web developer</i></p>
     <p>Pengetahuan tentang CSS sangatlah penting bagi seorang web developer, karena dengan CSS kita bisa :</p>
     <ul>
-        <li>Halaman landing page menarik</li>
-        <li>Tema dari blog</li>
-        <li>Mengatur tata letak</li>
-        <li>Desain lebih menarik</li>
-        <li>dan sebagainya</li>
+      <li>Halaman landing page menarik</li>
+      <li>Tema dari blog</li>
+      <li>Mengatur tata letak</li>
+      <li>Desain lebih menarik</li>
+      <li>dan sebagainya</li>
     </ul>
-    <p>Contohnya, tampilan Facebook dengan CSS dan tanpa CSS : </p>
-    <img src="img/facebook no css.png" alt="Facebook dengan CSS dan tanpa CSS">
+    <p>Contohnya, tampilan Facebook dengan CSS dan tanpa CSS :</p>
+    <img src="img/facebook no css.png" alt="Facebook dengan CSS dan tanpa CSS" />
     <p>Tentu perbedaannya sangat jauh, baik dari segi tata letak atau segi desain</p>
 
     <p>Pada artikel ini, kita membahas pengenalan dasar CSS, seperti :</p>
     <ul>
-        <li>Apa itu CSS?</li>
-        <li>Struktur Dasar CSS</li>
-        <li>Cara Menuliskan CSS di HTML</li>
+      <li>Apa itu CSS?</li>
+      <li>Struktur Dasar CSS</li>
+      <li>Cara Menuliskan CSS di HTML</li>
     </ul>
     <p>Mari kita mulai..</p>
 
@@ -37,68 +36,66 @@
     <h2>Variasi atau Versi CSS</h2>
     <p>Sejak awal diperkenalkan CSS memiliki beberapa variasi:</p>
     <ol>
-        <li>CSS 1: adalah versi pertama (17 Desember 1996)</li>
-        <li>CSS 2: adalah versi ke-2 (Mei 1998)</li>
-        <li>CSS 2.1: (7 Juni 2011)</li>
-        <li>CSS 3: (2021)</li>
-        <li>CSS 4: masih dalam pengembangan</li>
+      <li>CSS 1: adalah versi pertama (17 Desember 1996)</li>
+      <li>CSS 2: adalah versi ke-2 (Mei 1998)</li>
+      <li>CSS 2.1: (7 Juni 2011)</li>
+      <li>CSS 3: (2021)</li>
+      <li>CSS 4: masih dalam pengembangan</li>
     </ol>
     <p>Lalu apa beda dari setiap versi?</p>
     <p>Tentunya ada penambahan dan pengurangan..</p>
-    
+
     <h2>Struktur Kode atau Sintaks Dasar CSS</h2>
     <p>Struktur kode CSS terdiri dari tiga bagian:</p>
     <ul>
-        <li>Selektor</li>
-        <li>Blok Deklarasi</li>
-        <li>Properti dan nilainya</li>
+      <li>Selektor</li>
+      <li>Blok Deklarasi</li>
+      <li>Properti dan nilainya</li>
     </ul>
     <p>Contoh:</p>
-    <img src="img/sintaks-css.png" alt="aintaks dasar css">
+    <img src="img/sintaks-css.png" alt="sintaks dasar css" />
     <p>Mari kita bahas satu per satu..</p>
 
     <h2>Selektor</h2>
     <p>Selektor adalah kata kunci untuk memilih elemen HTML yang akan diatur</p>
     <p>Contohnya:</p>
-    <img src="img/Selektorh1.png" alt="Selektor">
-    <p>Artinya: Kita memilih semua elemen <strong><</strong>h1<strong>></strong>, lalu diberikan warna teks red (merah)</p>
+    <img src="img/Selektorh1.png" alt="Selektor" />
+    <p>Artinya: Kita memilih semua elemen <b><</b>h1<b>></b>, lalu diberikan warna teks red (merah)</p>
     <p>Selektor dapat berupa nama tag, class, id, dan atribut.</p>
     <p>Contoh:</p>
-    <img src="img/SelektorMulti.png" alt="">
-    
+    <img src="img/SelektorMulti.png" alt="multi selektor" />
+
     <h2>Blok Deklarasi</h2>
     <p>Blok deklarasi adalah tempat kita menuliskan atribut-atribut CSS yang akan diberikan ke pada selektor</p>
     <p>Contoh:</p>
-    <img src="img/DeklarasiFont.png" alt="">
-    <p>Artinya, kita akan mengatur ukuran font dari tag <strong><</strong>p<strong>></strong> sebesar 18px.</p>
-    <p>Blok deklarasi dimulai atau dibuka dengan tanda kurung kurawal <strong>{</strong> lalu ditutup dengan <strong>}</strong>.</p>
+    <img src="img/DeklarasiFont.png" alt="deklarasi dengan font" />
+    <p>Artinya, kita akan mengatur ukuran font dari tag <b><</b>p<b>></b> sebesar 18px.</p>
+    <p>Blok deklarasi dimulai atau dibuka dengan tanda kurung kurawal <b>{</b> lalu ditutup dengan <b>}</b>.</p>
 
     <h2>Properti dan Nilainya</h2>
     <p>Properti merupakan atribut atau sekumpulan aturan yang akan diberikan kepada elemen yang dipilih</p>
-    <img src="img/Deklarasi.png" alt="">
+    <img src="img/Deklarasi.png" alt="deklarasi" />
     <p>Setiap properti harus diakhiri dengan titik koma (;). Apabila hanya terdapat satu properti, boleh tidak menggunakan titik koma.</p>
     <p>Properti harus ditulis di dalam blok deklarasi.</p>
     <p>Contoh:</p>
-    <img src="img/DeklarasiSintaksbenar.png" alt="">
+    <img src="img/DeklarasiSintaksbenar.png" alt="sintaks benar" />
     <p>Tulisan properti salah:</p>
-    <img src="img/DeklarasiSintaksSalah.png" alt="">
+    <img src="img/DeklarasiSintaksSalah.png" alt="sintaks salah" />
 
     <h2>Cara Menulis kode CSS dalam HTML</h2>
-    <p>Penulisan kode CSS di HTML dapat dilakukan di dalam tag <strong><</strong>styles<strong>></strong>. <br >Tag tersebut dapat ditulis di dalam tag <strong><</strong>head<strong>></strong> atau <strong><</strong>body<strong>></strong>.</p>
-    <p>Kebanyakan orang menulisnya di dalam tag <strong><</strong>head<strong>></strong>. Perhatikan contoh berikut ini:</p>
-    <img src="img/MeletakkanCSS.png" alt="">
-    <p>Hasilnya, elemen <strong><</strong>p<strong>></strong> yang akan berwarna merah:</p>
-    <img src="img/TampilanCSS.png" alt="">
+    <p>Penulisan kode CSS di HTML dapat dilakukan di dalam tag <b><</b>styles<b>></b>. <br />Tag tersebut dapat ditulis di dalam tag <b><</b>head<b>></b> atau <b><</b>body<b>></b>.</p>
+    <p>Kebanyakan orang menulisnya di dalam tag <b><</b>head<b>></b>. Perhatikan contoh berikut ini:</p>
+    <img src="img/MeletakkanCSS.png" alt="peletakkan css" />
+    <p>Hasilnya, elemen <b><</b>p<b>></b> yang akan berwarna merah:</p>
+    <img src="img/TampilanCSS.png" alt="tampilan dari css" />
     <p>Selain dengan cara ini, ada dua cara lagi yang bisa digunakan:</p>
     <ol>
-        <li>Inline CSS</li>
-        <li>Eksternal CSS</li>
+      <li>Inline CSS</li>
+      <li>Eksternal CSS</li>
     </ol>
-    
+
     <p>Sekian pengenalan dasar CSS, terima kasih..</p>
 
-    <a href="landing-page.html">Kembali ke halaman utama</a>
-
-
-</body>
+    <h4><a href="landing-page.html">Kembali ke halaman utama</a></h4>
+  </body>
 </html>
