@@ -147,16 +147,79 @@ label {
 
 /* Learning */
 
+.learning h1{
+  text-align: center;
+}
+
+.learning hr {
+  width: 200px;
+  margin: 10px auto;
+}
+.container {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid black;
+	border-radius: 10px;
+	background-color: white;
+	overflow: hidden;
+	margin: 8px;
+  padding: 10px;
+  background-color: #555;
+  color: white;
+}
+
+a .card .konten .sub-judul {
+  font-weight: bold;
+  font-size: 18px;
+}
+.card .gambar img {
+  width: 95%;
+  height: 140px;
+  border-radius: 8px;
+}
+.container a {
+  text-decoration: none;
+}
+
+.learning .container a .card .gambar {
+  padding-bottom: 6px;
+}
+
+.learning .container a .card {
+  transition-property: transform;
+  transition: 0.3s;
+}
+
+.learning .container a .card:hover {
+  transform: scale(1.035);
+}
+
+.card .konten .paragraf {
+  font-size: 12px;
+}
+
+.card .konten .paragraf:hover {
+  text-decoration: white;
+}
+
 .fa-html5 {
   color: rgb(255, 136, 0);
 }
+
 .fa-css3-alt {
-  color: rgb(58, 58, 246);
+  color: rgb(96, 96, 248);
 }
 
 .fa-js-square {
   color: rgb(255, 179, 0);
 }
+
+/* Akhir Learning */
 
 /* About */
 .about p a i {
