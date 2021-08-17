@@ -16,7 +16,7 @@ body {
   background-color: #eee;
 }
 
-section {
+.home  {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -27,6 +27,43 @@ section {
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
+}
+
+/* style untuk materi javascript */
+.container-js {
+  width: 80%;
+  margin: 180px auto 50px auto;
+  padding: 20px;
+  background-color: #444;
+  color: white;
+  border-radius: 8px;
+}
+
+.container-js .my-profile img {
+  border-radius: 50%;
+}
+
+.container-js .my-profile {
+  display: flex;
+  padding: 10px;
+}
+
+.container-js .my-profile p {
+  padding: 12px 12px;
+}
+
+.container-js .my-profile p a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-js .my-profile p a:hover {
+  color: rgb(91, 91, 250);
+  border-bottom: 1px solid rgb(91, 91, 250);
+}
+
+.container-js hr {
+  margin: 30px 0;
 }
 
 /* Header */
@@ -240,6 +277,7 @@ a .card .konten .sub-judul {
 /* Akhir about */
 
 /* Contact */
+
 
 
 /* Akhir Contact */
