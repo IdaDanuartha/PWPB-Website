@@ -1,3 +1,3 @@
 # PWPB-Website.github.io
 
-[Ini Website Kelompok Kami](https://idadanuartha.github.io/PWPB-Website.github.io/landing-page.html)
+[Website Kelompok 8](https://idadanuartha.github.io/PWPB-Website.github.io/landing-page.html)
