@@ -352,6 +352,10 @@ a .card .konten .sub-judul {
 .container-js .tambahan a li:hover {
   color: rgb(158, 255, 215);;
 }
+
+.container-js .tambahan a *:active {
+  background-color: rgba(158, 255, 215, 0.4);;
+}
 /* Akhir style untuk materi javascript */
 
 
