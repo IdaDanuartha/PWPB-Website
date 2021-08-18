@@ -29,43 +29,6 @@ body {
   background-repeat: no-repeat;
 }
 
-/* style untuk materi javascript */
-.container-js {
-  width: 80%;
-  margin: 180px auto 50px auto;
-  padding: 20px;
-  background-color: #444;
-  color: white;
-  border-radius: 8px;
-}
-
-.container-js .my-profile img {
-  border-radius: 50%;
-}
-
-.container-js .my-profile {
-  display: flex;
-  padding: 10px;
-}
-
-.container-js .my-profile p {
-  padding: 12px 12px;
-}
-
-.container-js .my-profile p a {
-  text-decoration: none;
-  color: white;
-}
-
-.container-js .my-profile p a:hover {
-  color: rgb(91, 91, 250);
-  border-bottom: 1px solid rgb(91, 91, 250);
-}
-
-.container-js hr {
-  margin: 30px 0;
-}
-
 /* Header */
 header {
   position: fixed;
@@ -294,9 +257,68 @@ footer {
 
 /* Akhir Footer */
 
+/* style untuk materi javascript */
+.container-js {
+  width: 80%;
+  margin: 180px auto 50px auto;
+  padding: 20px;
+  background-color: #444;
+  color: white;
+  border-radius: 10px;
+}
 
+.container-js .my-profile img {
+  border-radius: 50%;
+}
+
+.container-js .my-profile {
+  display: flex;
+  padding: 10px;
+}
+
+.container-js .my-profile p {
+  padding: 12px 12px;
+}
+
+.container-js .my-profile p a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-js .my-profile p a:hover {
+  color: rgb(91, 91, 250);
+  border-bottom: 1px solid rgb(91, 91, 250);
+}
+
+.container-js h1 {
+  font-size: 35px;
+  padding-top: 15px;
+}
+.container-js hr {
+  margin: 30px 0;
+}
+ 
+.container-js .gbr-utama {
+  max-width: 100%;
+  height: auto;
+  margin: 50px 10%;
+  box-sizing: border-box;
+}
+
+/* Akhir style untuk materi javascript */
 
 /* Responsive styles */
+
+@media (max-width: 1150px) {
+  .container-js .gbr-utama {
+    max-width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 0 80px;
+    box-sizing: border-box;
+  }
+}
+
 @media (max-width: 960px) {
   header .nav {
     display: none;
@@ -374,7 +396,23 @@ footer {
     font-size: 15px;
     margin-left: 110px;
     margin-bottom: 50px;
-  } 
+  }
+
+  /* responsive untuk materi javascript */
+  .container-js {
+    width: 90%;
+    margin-top: 30%;
+  }
+
+  .container-js .gbr-utama {
+    max-width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  /* Akhir responsive untuk materi javascript */
 }
 
 @media (max-width: 575px) {
@@ -412,4 +450,19 @@ footer {
     font-size: 12px;
     line-height: 60px;
   }
+
+  /* responsive untuk materi javascript */
+  .container-js {
+    width: 100%;
+    margin-top: 0;
+    border-radius: 0;
+    
+  }
+  .container-js .gbr-utama {
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+  }
+
+  /* Akhir responsive untuk materi javascript */
 }
