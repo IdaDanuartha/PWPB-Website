@@ -243,6 +243,7 @@ a .card .konten .sub-judul {
 
 
 
+
 /* Akhir Contact */
 
 /* Footer */
@@ -301,11 +302,55 @@ footer {
 .container-js .gbr-utama {
   max-width: 100%;
   height: auto;
-  margin: 50px 10%;
+  margin: 40px 15%;
+  box-sizing: border-box;
+  transition-property: transform;
+  transition: 0.3s;
+}
+
+.container-js .gbr-utama:hover {
+  transform: scale(1.015);
+}
+
+.container-js .sub-gbr {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 25%;
   box-sizing: border-box;
 }
 
+.container-js .gbr-kode-besar {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 15%;
+  box-sizing: border-box;
+}
+
+.container-js .gbr-browser {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 15%;
+  box-sizing: border-box;
+}
+
+.container-js .gbr-kode-kecil {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.container-js .tambahan a {
+  text-decoration: none;
+  color: rgb(31, 240, 153);
+  padding-bottom: 5px;
+}
+
+.container-js .tambahan a li:hover {
+  color: rgb(158, 255, 215);;
+}
 /* Akhir style untuk materi javascript */
+
+
 
 /* Responsive styles */
 
@@ -314,9 +359,25 @@ footer {
     max-width: 100%;
     height: auto;
     margin: 50px 0;
-    padding: 0 80px;
+    padding: 0 700px;
     box-sizing: border-box;
   }
+
+  .container-js .gbr-kode-besar {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 15%;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .container-js .gbr-browser {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
 }
 
 @media (max-width: 960px) {
@@ -412,6 +473,35 @@ footer {
     box-sizing: border-box;
   }
 
+  .container-js .sub-gbr {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 30px;
+    box-sizing: border-box;
+  } 
+
+  .container-js .gbr-kode-besar {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 5%;
+  padding: 0 30px;
+  box-sizing: border-box;
+ }
+
+ .container-js .gbr-browser {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+ } 
+
+ .container-js .gbr-kode-kecil {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
   /* Akhir responsive untuk materi javascript */
 }
 
@@ -448,21 +538,59 @@ footer {
 
   footer {
     font-size: 12px;
-    line-height: 60px;
+    justify-content: center;
+    align-items: center;
   }
 
   /* responsive untuk materi javascript */
   .container-js {
     width: 100%;
     margin-top: 0;
-    border-radius: 0;
+    border-radius: 8px;
     
+  }
+
+  .container-js .my-profile {
+    font-size: 15px;
+  }
+  .container-js h1 {
+    font-size: 28px;
   }
   .container-js .gbr-utama {
     width: 100%;
-    height: auto;
-    padding: 0 30px;
+    height: auto;  
+    padding: 0 8px;
+    box-sizing: border-box;
   }
 
+  .container-js .sub-gbr {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-kode-besar {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-browser {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-kode-kecil {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
   /* Akhir responsive untuk materi javascript */
 }
