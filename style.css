@@ -248,7 +248,7 @@ a .card .konten .sub-judul {
 
 /* Footer */
 
-footer {
+.footer-dua {
   background-color: #222; 
   color: white; 
   height: 60px;
@@ -343,6 +343,10 @@ footer {
   text-decoration: none;
   color: rgb(31, 240, 153);
   padding-bottom: 5px;
+}
+
+.container-js .tambahan {
+  width: 160px;
 }
 
 .container-js .tambahan a li:hover {
@@ -537,7 +541,7 @@ footer {
   }
 
   footer {
-    font-size: 12px;
+    font-size: 11px;
     justify-content: center;
     align-items: center;
   }
@@ -546,8 +550,7 @@ footer {
   .container-js {
     width: 100%;
     margin-top: 0;
-    border-radius: 8px;
-    
+    border-radius: 0;
   }
 
   .container-js .my-profile {
