@@ -147,7 +147,7 @@ label {
 
 /* Learning */
 
-.learning h1{
+.learning h1 {
   text-align: center;
 }
 
@@ -163,13 +163,13 @@ label {
 }
 
 .card {
-  border: 1px solid black;
-	border-radius: 10px;
-	background-color: white;
-	overflow: hidden;
-	margin: 8px;
+  border: 1px solid rgba(172, 171, 171, 0.95);
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  margin: 8px;
   padding: 10px;
-  background-color: #555;
+  background-color: rgba(172, 171, 171, 0.95);
   color: white;
 }
 
@@ -323,6 +323,7 @@ a .card .konten .sub-judul {
     height: 100px;
   }
 
+  /* Judul website */
   .content .info h2 {
     font-size: 38px;
     line-height: 40px;
@@ -340,4 +341,5 @@ a .card .konten .sub-judul {
     margin-left: 50px;
     margin-bottom: 50px;
   }
+  /* Akhir Judul website */
 }
