@@ -13,7 +13,6 @@ html {
 
 body {
   margin-top: 114px;
-  background-color: #eee;
 }
 
 .home {
@@ -147,14 +146,17 @@ label {
 /* Akhir Menu navbar learning, about dan contact */
 
 /* Learning */
-
+.learning {
+  min-height: 700px;
+}
 .learning h1 {
   text-align: center;
 }
 
-.learning hr {
-  width: 200px;
+hr {
+  width: 230px;
   margin: 10px auto;
+  margin: 20px 0 50px 0;
 }
 
 .learning .container {
@@ -228,9 +230,64 @@ a .card .konten .sub-judul {
 /* Akhir Learning */
 
 /* About */
+.about {
+  min-height: 500px;
+  padding-bottom: 100px;
+  background-color: #eee;
+}
+.about h1 {
+  text-align: center;
+}
+
+.about .anggota {
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 8px;
+  padding: 15px;
+  background-color: rgb(210, 0, 1);
+  color: white;
+}
+
+.container-about {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.about .container-about img {
+  border-radius: 50%;
+}
+
+.about .container-about i {
+  font-size: 25px;
+  margin-top: 10px;
+}
+.about .container-about .anggota .link-profil {
+  border: 1px solid #0dcaf0;
+  padding: 2px 5px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.about .container-about .anggota .link-profil a {
+  text-decoration: none;
+  color: #0dcaf0;
+}
+
+.about .container-about .anggota .link-profil:hover {
+  background-color: #0dcaf0;
+}
+
+.about .container-about .anggota .link-profil a:hover {
+  color: black;
+}
 .about p a i {
   transition: 0.3s;
   transition-property: transform;
+  color: #222;
 }
 
 .about p a i:hover {
@@ -245,7 +302,7 @@ a .card .konten .sub-judul {
 
 /* Footer */
 
-.footer-dua {
+footer {
   background-color: #222;
   color: white;
   height: 60px;
