@@ -13,9 +13,10 @@ html {
 
 body {
   margin-top: 114px;
+  background-color: #eee;
 }
 
-section {
+.home {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -155,6 +156,11 @@ label {
   width: 200px;
   margin: 10px auto;
 }
+
+.learning .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 .container {
   width: 90%;
   margin: 50px auto;
@@ -162,14 +168,16 @@ label {
   text-align: center;
 }
 
+.learning .container a {
+  text-decoration: none;
+}
+
 .card {
-  border: 1px solid rgba(172, 171, 171, 0.95);
+  border: 1px solid black;
   border-radius: 10px;
-  background-color: white;
-  overflow: hidden;
   margin: 8px;
-  padding: 10px;
-  background-color: rgba(172, 171, 171, 0.95);
+  padding: 15px;
+  background-color: #444;
   color: white;
 }
 
@@ -181,9 +189,6 @@ a .card .konten .sub-judul {
   width: 95%;
   height: 140px;
   border-radius: 8px;
-}
-.container a {
-  text-decoration: none;
 }
 
 .learning .container a .card .gambar {
@@ -201,10 +206,11 @@ a .card .konten .sub-judul {
 
 .card .konten .paragraf {
   font-size: 12px;
+  color: #999;
 }
 
-.card .konten .paragraf:hover {
-  text-decoration: white;
+.card .konten .sub-judul:hover {
+  color: rgb(97, 99, 246);
 }
 
 .fa-html5 {
@@ -233,7 +239,149 @@ a .card .konten .sub-judul {
 
 /* Akhir about */
 
+/* Contact */
+
+/* Akhir Contact */
+
+/* Footer */
+
+.footer-dua {
+  background-color: #222;
+  color: white;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+/* Akhir Footer */
+
+/* style untuk materi javascript */
+.container-js {
+  width: 80%;
+  margin: 180px auto 50px auto;
+  padding: 20px;
+  background-color: #444;
+  color: white;
+  border-radius: 10px;
+}
+
+.container-js .my-profile img {
+  border-radius: 50%;
+}
+
+.container-js .my-profile {
+  display: flex;
+  padding: 10px;
+}
+
+.container-js .my-profile p {
+  padding: 12px 12px;
+}
+
+.container-js .my-profile p a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-js .my-profile p a:hover {
+  color: rgb(91, 91, 250);
+  border-bottom: 1px solid rgb(91, 91, 250);
+}
+
+.container-js h1 {
+  font-size: 35px;
+  padding-top: 15px;
+}
+.container-js hr {
+  margin: 30px 0;
+}
+
+.container-js .gbr-utama {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 15%;
+  box-sizing: border-box;
+  transition-property: transform;
+  transition: 0.3s;
+}
+
+.container-js .gbr-utama:hover {
+  transform: scale(1.015);
+}
+
+.container-js .sub-gbr {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 25%;
+  box-sizing: border-box;
+}
+
+.container-js .gbr-kode-besar {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 15%;
+  box-sizing: border-box;
+}
+
+.container-js .gbr-browser {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 15%;
+  box-sizing: border-box;
+}
+
+.container-js .gbr-kode-kecil {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.container-js .tambahan a {
+  text-decoration: none;
+  color: rgb(31, 240, 153);
+  padding-bottom: 5px;
+}
+
+.container-js .tambahan {
+  width: 160px;
+}
+
+.container-js .tambahan a li:hover {
+  color: rgb(158, 255, 215);
+}
+
+.container-js .tambahan a *:active {
+  background-color: rgba(158, 255, 215, 0.4);
+}
+/* Akhir style untuk materi javascript */
+
 /* Responsive styles */
+
+@media (max-width: 1150px) {
+  .container-js .gbr-utama {
+    max-width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 0 700px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-kode-besar {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 15%;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .container-js .gbr-browser {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+}
+
 @media (max-width: 960px) {
   header .nav {
     display: none;
@@ -312,6 +460,51 @@ a .card .konten .sub-judul {
     margin-left: 110px;
     margin-bottom: 50px;
   }
+
+  /* responsive untuk materi javascript */
+  .container-js {
+    width: 90%;
+    margin-top: 30%;
+  }
+
+  .container-js .gbr-utama {
+    max-width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .container-js .sub-gbr {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-kode-besar {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 5%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-browser {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-kode-kecil {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+  /* Akhir responsive untuk materi javascript */
 }
 
 @media (max-width: 575px) {
@@ -341,5 +534,65 @@ a .card .konten .sub-judul {
     margin-left: 50px;
     margin-bottom: 50px;
   }
-  /* Akhir Judul website */
+
+  .learning .container {
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  }
+
+  footer {
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* responsive untuk materi javascript */
+  .container-js {
+    width: 100%;
+    margin-top: 0;
+    border-radius: 0;
+  }
+
+  .container-js .my-profile {
+    font-size: 15px;
+  }
+  .container-js h1 {
+    font-size: 28px;
+  }
+  .container-js .gbr-utama {
+    width: 100%;
+    height: auto;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+
+  .container-js .sub-gbr {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-kode-besar {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-browser {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-kode-kecil {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+  /* Akhir responsive untuk materi javascript */
 }
