@@ -153,10 +153,9 @@ label {
   text-align: center;
 }
 
-hr {
+.learning hr, .about hr {
   width: 230px;
-  margin: 10px auto;
-  margin: 20px 0 50px 0;
+  margin: 20px auto 50px auto;
 }
 
 .learning .container {
@@ -298,6 +297,8 @@ a .card .konten .sub-judul {
 
 /* Contact */
 
+
+
 /* Akhir Contact */
 
 /* Footer */
@@ -305,9 +306,10 @@ a .card .konten .sub-judul {
 footer {
   background-color: #222;
   color: white;
-  height: 60px;
-  text-align: center;
-  line-height: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Akhir Footer */
@@ -350,7 +352,7 @@ footer {
   padding-top: 15px;
 }
 .container-js hr {
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 .container-js .gbr-utama {
