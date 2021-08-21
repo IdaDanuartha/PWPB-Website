@@ -324,18 +324,14 @@ footer {
   border-radius: 10px;
 }
 
-.container-js .my-profile img {
-  border-radius: 50%;
-}
+.container-js .my-profile img {border-radius: 50%;}
 
 .container-js .my-profile {
   display: flex;
   padding: 10px;
 }
 
-.container-js .my-profile p {
-  padding: 12px 12px;
-}
+.container-js .my-profile p {padding: 12px 12px;}
 
 .container-js .my-profile p a {
   text-decoration: none;
@@ -351,9 +347,8 @@ footer {
   font-size: 35px;
   padding-top: 15px;
 }
-.container-js hr {
-  margin: 40px 0;
-}
+
+.container-js hr {margin: 40px 0;}
 
 .container-js .gbr-utama {
   max-width: 100%;
@@ -413,6 +408,67 @@ footer {
   background-color: rgba(158, 255, 215, 0.4);
 }
 /* Akhir style untuk materi javascript */
+
+
+/* style untuk sumber belajar */
+.container-sumber-belajar .my-profile img {border-radius: 50%;}
+
+.container-sumber-belajar .my-profile {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.container-sumber-belajar .my-profile p {padding: 12px 12px;}
+
+.container-sumber-belajar .my-profile p a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-sumber-belajar .my-profile p a:hover {
+  color: rgb(91, 91, 250);
+  border-bottom: 1px solid rgb(91, 91, 250);
+}
+
+.container-sumber-belajar hr {margin: 40px 0;}
+
+.container-sumber-belajar {
+  width: 80%;
+  margin: 180px auto 50px auto;
+  padding: 20px;
+  background-color: #444;
+  color: white;
+  border-radius: 10px;
+}
+
+.container-sumber-belajar .gambar {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 25%;
+  transition-property: transform;
+  transition: 0.3s;
+}
+
+.container-sumber-belajar .gambar:hover {
+  transform: scale(1.025);
+}
+
+.container-sumber-belajar a {
+  color: white;
+  text-decoration: none;
+  color: rgb(31, 240, 153);
+}
+
+.container-sumber-belajar a:hover {
+    color: rgb(158, 255, 215);
+}
+
+/* Akhir style untuk sumber belajar */
+
+
+
+
 
 /* Responsive styles */
 
@@ -564,6 +620,23 @@ footer {
     box-sizing: border-box;
   }
   /* Akhir responsive untuk materi javascript */
+
+  /* responsive untuk materi sumber belajar */
+  .container-sumber-belajar {
+    width: 90%;
+  }
+  .container-sumber-belajar h1 {
+    font-size: 25px;
+  }
+
+  .container-sumber-belajar .gambar {
+    max-width: 100%;
+    height: auto;
+    margin: 50px 5%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  /* akhir responsive untuk materi sumber belajar */
 }
 
 @media (max-width: 575px) {
@@ -654,4 +727,24 @@ footer {
     box-sizing: border-box;
   }
   /* Akhir responsive untuk materi javascript */
+
+
+   /* responsive untuk materi sumber belajar */
+   .container-sumber-belajar {
+    width: 100%;
+    margin-top: 0;
+    border-radius: 0;
+   }
+
+   .container-sumber-belajar .my-profile p {
+    font-size: 13px;
+   }
+   .container-sumber-belajar h1 {
+    font-size: 18px;
+  }
+
+   .container-sumber-belajar .gambar {
+    margin: 50px 0;
+  }
+  /* akhir responsive untuk materi sumber belajar */
 }
