@@ -15,7 +15,7 @@ body {
   margin-top: 114px;
 }
 
-.home  {
+.home {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -149,7 +149,7 @@ label {
 .learning {
   min-height: 700px;
 }
-.learning h1{
+.learning h1 {
   text-align: center;
 }
 
@@ -176,8 +176,8 @@ hr {
 
 .card {
   border: 1px solid black;
-	border-radius: 10px;
-	margin: 8px;
+  border-radius: 10px;
+  margin: 8px;
   padding: 15px;
   background-color: #444;
   color: white;
@@ -242,10 +242,10 @@ a .card .konten .sub-judul {
 .about .anggota {
   width: 200px;
   border: 1px solid black;
-	border-radius: 10px;
-	margin: 8px;
+  border-radius: 10px;
+  margin: 8px;
   padding: 15px;
-  background-color: rgb(210, 0, 1);
+  background-color: #444;
   color: white;
 }
 
@@ -298,15 +298,13 @@ a .card .konten .sub-judul {
 
 /* Contact */
 
-
-
 /* Akhir Contact */
 
 /* Footer */
 
 footer {
-  background-color: #222; 
-  color: white; 
+  background-color: #222;
+  color: white;
   height: 60px;
   text-align: center;
   line-height: 60px;
@@ -354,7 +352,7 @@ footer {
 .container-js hr {
   margin: 30px 0;
 }
- 
+
 .container-js .gbr-utama {
   max-width: 100%;
   height: auto;
@@ -406,15 +404,13 @@ footer {
 }
 
 .container-js .tambahan a li:hover {
-  color: rgb(158, 255, 215);;
+  color: rgb(158, 255, 215);
 }
 
 .container-js .tambahan a *:active {
-  background-color: rgba(158, 255, 215, 0.4);;
+  background-color: rgba(158, 255, 215, 0.4);
 }
 /* Akhir style untuk materi javascript */
-
-
 
 /* Responsive styles */
 
@@ -441,7 +437,6 @@ footer {
     padding: 0 40px;
     box-sizing: border-box;
   }
-
 }
 
 @media (max-width: 960px) {
@@ -543,29 +538,29 @@ footer {
     margin: 40px 0;
     padding: 0 30px;
     box-sizing: border-box;
-  } 
+  }
 
   .container-js .gbr-kode-besar {
-  max-width: 100%;
-  height: auto;
-  margin: 40px 5%;
-  padding: 0 30px;
-  box-sizing: border-box;
- }
+    max-width: 100%;
+    height: auto;
+    margin: 40px 5%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
 
- .container-js .gbr-browser {
-  max-width: 100%;
-  height: auto;
-  margin: 40px 0;
-  padding: 0 20px;
-  box-sizing: border-box;
- } 
+  .container-js .gbr-browser {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
 
- .container-js .gbr-kode-kecil {
-  max-width: 100%;
-  height: auto;
-  box-sizing: border-box;
-}
+  .container-js .gbr-kode-kecil {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
   /* Akhir responsive untuk materi javascript */
 }
 
@@ -578,6 +573,7 @@ footer {
     height: 100px;
   }
 
+  /* Judul website */
   .content .info h2 {
     font-size: 38px;
     line-height: 40px;
@@ -621,7 +617,7 @@ footer {
   }
   .container-js .gbr-utama {
     width: 100%;
-    height: auto;  
+    height: auto;
     padding: 0 8px;
     box-sizing: border-box;
   }
