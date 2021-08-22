@@ -256,7 +256,7 @@ a .card .konten .sub-judul {
   padding-left: 100px;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-gap: 30px;
 }
 
@@ -691,8 +691,8 @@ footer {
 
   .container-about {
     grid-gap: 5px;
-    padding: 0;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding-left: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   }
 
   /* responsive untuk materi javascript */
