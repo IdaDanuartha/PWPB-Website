@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Belajar CSS</title>
+  </head>
+  <body>
+    <!--Navigation-->
+    
+      <input type="checkbox" id="check">
+      <header>
+          <h2 class="logo"><i class="fas fa-code"></i></h2>
+          <div class="nav">
+              <a href="landing-page.html"><i class="fas fa-home"></i> Home</a>
+              <a href="landing-page.html"><i class="fab fa-leanpub"></i> Learning</a>
+              <a href="landing-page.html"><i class="fas fa-user"></i> About</a>
+              <a href="landing-page.html"><i class="fas fa-phone-alt"></i> Contact</a>
+          </div>
+          <label for="check">
+              <i class="fas fa-bars open"></i>
+              <i class="fas fa-times close"></i>
+          </label>
+      </header>
+  
+    <!--Akhir Navigation-->
+
+
+  <div class="container-js">
+    <!--Profile--> 
+      <div class="my-profile">
+        <img src="img/profil-wisnu.jpeg" alt="profil wisnu" width="45px" height="45px">
+        <p><a href="https://github.com/Wisnu09"><b>Wisnu</b></a> • Penulis Artikel • 22 Agustus 2021 </p>
+      </div>
+    <!--Profile-->
+
+
+        <h1>Pengenalan Dasar CSS untuk Pemula</h1>
+        <a href="https://www.petanikode.com/javascript-dasar/">
+            <img src="img/css3.png" alt="Gambar utama CSS" class="gbr-utama" width="720px" height="360px">
+        </a>
+
+        <!--Materi-->
+        <p>CSS adalah bahasa kedua yang harus dipelajari oleh <i>Web developer</i></p>
+        <p>Pengetahuan tentang CSS sangatlah penting bagi seorang web developer, karena dengan CSS kita bisa :</p>
+        <ul>
+          <li>Halaman landing page menarik</li>
+          <li>Tema dari blog</li>
+          <li>Mengatur tata letak</li>
+          <li>Desain lebih menarik</li>
+          <li>dan sebagainya</li>
+        </ul>
+        <p>Contohnya, tampilan website ini dengan CSS dan tanpa CSS:</p>
+        <img src="img/web-no-css.png" alt="Website ini dengan CSS dan tanpa CSS" />
+        <p>Tentu perbedaannya sangat jauh, baik dari segi tata letak atau segi desain</p>
+
+        <p>Pada artikel ini, kita membahas pengenalan dasar CSS, seperti :</p>
+        <ul>
+          <li>Apa itu CSS?</li>
+          <li>Struktur Dasar CSS</li>
+          <li>Cara Menuliskan CSS di HTML</li>
+        </ul>
+
+
+        <h2>Apa itu CSS?</h2>
+        <p>CSS atau <i>Cascade Style Sheet</i> merupakan sebuah bahasa untuk mengatur tampilan web sehingga terlihat lebih menarik dan indah</p>
+        <p>Dengan CSS kita dapat mengatur <i>layout</i> (tata letak), warna, font, garis, dan lain-lain.</p>
+        <h2>Variasi atau Versi CSS</h2>
+        <p>Sejak awal diperkenalkan CSS memiliki beberapa variasi:</p>
+        <ol>
+          <li>CSS 1: adalah versi pertama (17 Desember 1996)</li>
+          <li>CSS 2: adalah versi ke-2 (Mei 1998)</li>
+          <li>CSS 2.1: (7 Juni 2011)</li>
+          <li>CSS 3: (2021)</li>
+          <li>CSS 4: masih dalam pengembangan</li>
+        </ol>
+        <p>Lalu apa beda dari setiap versi?</p>
+        <p>Tentunya ada penambahan dan pengurangan..</p>
+
+        <h2>Struktur Kode atau Sintaks Dasar CSS</h2>
+        <p>Struktur kode CSS terdiri dari tiga bagian:</p>
+        <ul>
+          <li>Selektor</li>
+          <li>Blok Deklarasi</li>
+          <li>Properti dan nilainya</li>
+        </ul>
+        <p>Contoh:</p>
+        <img src="img/sintaks-css.png" alt="sintaks dasar css" />
+        <p>Mari kita bahas satu per satu..</p>
+
+        <h2>Selektor</h2>
+        <p>Selektor adalah kata kunci untuk memilih elemen HTML yang akan diatur</p>
+        <p>Contohnya:</p>
+        <img src="img/Selektorh1.png" alt="Selektor" />
+        <p>Artinya: Kita memilih semua elemen <code>&lt;h1&gt;</code>, lalu diberikan warna teks red (merah)</p>
+        <p>Selektor dapat berupa nama tag, class, id, dan atribut.</p>
+        <p>Contoh:</p>
+        <img src="img/SelektorMulti.png" alt="multi selektor" />
+
+        <h2>Blok Deklarasi</h2>
+        <p>Blok deklarasi adalah tempat kita menuliskan atribut-atribut CSS yang akan diberikan ke pada selektor</p>
+        <p>Contoh:</p>
+        <img src="img/DeklarasiFont.png" alt="deklarasi dengan font" />
+        <p>Artinya, kita akan mengatur ukuran font dari tag <code>&lt;p&gt;</code> sebesar 18px.</p>
+        <p>Blok deklarasi dimulai atau dibuka dengan tanda kurung kurawal { lalu ditutup dengan }.</p>
+
+        <h2>Properti dan Nilainya</h2>
+        <p>Properti merupakan atribut atau sekumpulan aturan yang akan diberikan kepada elemen yang dipilih</p>
+        <img src="img/Deklarasi.png" alt="deklarasi" />
+        <p>Setiap properti harus diakhiri dengan titik koma (;). Apabila hanya terdapat satu properti, boleh tidak menggunakan titik koma.</p>
+        <p>Properti harus ditulis di dalam blok deklarasi.</p>
+        <p>Contoh:</p>
+        <img src="img/DeklarasiSintaksbenar.png" alt="sintaks benar" />
+        <p>Tulisan properti salah:</p>
+        <img src="img/DeklarasiSintaksSalah.png" alt="sintaks salah" />
+
+        <h2>Cara Menulis kode CSS dalam HTML</h2>
+        <p>Penulisan kode CSS di HTML dapat dilakukan di dalam tag <code>&lt;style&gt;</code>. <br /></p>
+
+        <p>Tag tersebut dapat ditulis di dalam tag <code>&lt;head&gt;</code> atau <code>&lt;body&gt;</code>.</p>
+        <p>Kebanyakan orang menulisnya di dalam tag <code>&lt;head&gt;</code>. Perhatikan contoh berikut ini:</p>
+        <img src="img/MeletakkanCSS.png" alt="peletakkan css" />
+        <p>Hasilnya, elemen <code>&lt;p&gt;</code>yang akan berwarna merah:</p>
+        <img src="img/TampilanCSS.png" alt="tampilan dari css" />
+        <p>Selain dengan cara ini, ada dua cara lagi yang bisa digunakan:</p>
+        <ol>
+          <li>Inline CSS</li>
+          <li>Eksternal CSS</li>
+        </ol>
+        <!--Materi-->
+        <!--Penutup-->
+        <p>Selamat~ kamu sudah mengenal CSS dan mengetahui sintaks CSS</p>
+        <p>Sekian pengenalan dasar CSS, terima kasih..</p>
+        <!--Penutup-->
+        <!--Materi Tambahan-->
+        <h2>Baca dan Pelajari juga : </h2><br>
+        <ul class="tambahan">
+          <a href="materi-html.html"><li>Belajar HTML Dasar</li></a>
+          <a href="materi-css.html"><li>Belajar Javascript Dasar</li></a>
+          <a href="sumber-belajar.html"><li>Sumber Belajar Lain</li></a>
+        </ul>
+        <!--Akhir Materi Tambahan-->
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <p>Copyright © 2021. | Built by Wisnu - Chesa - Prama - Danu</p>
+  </footer>
+  <!-- akhir footer -->
+  </body>
+</html>
