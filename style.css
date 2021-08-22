@@ -187,6 +187,7 @@ a .card .konten .sub-judul {
   font-weight: bold;
   font-size: 18px;
 }
+
 .card .gambar img {
   width: 95%;
   height: 140px;
@@ -679,7 +680,7 @@ footer {
   }
 
   .learning .container {
-    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   }
 
   footer {
@@ -689,8 +690,8 @@ footer {
   }
 
   .container-about {
-    padding-left: 0;
-    grid-gap: 10px;
+    padding: 0;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   }
 
   /* responsive untuk materi javascript */
