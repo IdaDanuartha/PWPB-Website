@@ -690,8 +690,9 @@ footer {
   }
 
   .container-about {
+    grid-gap: 5px;
     padding: 0;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 
   /* responsive untuk materi javascript */
