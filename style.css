@@ -255,7 +255,6 @@ a .card .konten .sub-judul {
   padding-left: 100px;
   text-align: center;
   display: grid;
-  background-color: red;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 30px;
 }
