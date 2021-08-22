@@ -158,15 +158,16 @@ label {
   margin: 20px auto 50px auto;
 }
 
-.learning .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
 .container {
   width: 90%;
   margin: 50px auto;
   display: flex;
   text-align: center;
+}
+
+.learning .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .learning .container a {
@@ -230,7 +231,7 @@ a .card .konten .sub-judul {
 
 /* About */
 .about {
-  min-height: 500px;
+  min-height: 550px;
   padding-bottom: 100px;
   background-color: #eee;
 }
@@ -251,9 +252,12 @@ a .card .konten .sub-judul {
 .container-about {
   width: 90%;
   margin: 50px auto;
-  display: flex;
+  padding-left: 100px;
   text-align: center;
-  justify-content: space-around;
+  display: grid;
+  background-color: red;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
 }
 
 .about .container-about img {
@@ -473,6 +477,10 @@ footer {
 /* Responsive styles */
 
 @media (max-width: 1150px) {
+  .container-about {
+    padding-left: 70px;
+  }
+
   .container-js .gbr-utama {
     max-width: 100%;
     height: auto;
@@ -576,6 +584,10 @@ footer {
     margin-bottom: 50px;
   }
 
+  .container-about {
+    padding-left: 50px;
+  }
+
   /* responsive untuk materi javascript */
   .container-js {
     width: 90%;
@@ -675,6 +687,11 @@ footer {
     font-size: 11px;
     justify-content: center;
     align-items: center;
+  }
+
+  .container-about {
+    padding-left: 0;
+    grid-gap: 10px;
   }
 
   /* responsive untuk materi javascript */
