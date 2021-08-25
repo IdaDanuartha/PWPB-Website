@@ -329,11 +329,20 @@ footer {
   border-radius: 10px;
 }
 
-.my-profile img {border-radius: 50%;}
 
 .my-profile {
   display: flex;
   padding: 10px;
+}
+
+.my-profile img {
+  border-radius: 50%;
+  transition: 0.9s;
+}
+
+.my-profile img:hover {
+  transform: scale(1.3);
+  transform: rotate(360deg);
 }
 
 .my-profile p {padding: 12px 12px;}
@@ -365,47 +374,23 @@ footer {
   color: rgb(158, 255, 215);
 }
 
-/* akhir style untuk semua materi pada learning */
-
-/* style untuk materi javascript */
-.javascript .gbr-utama {
+.container-materi .img-materi {
   max-width: 100%;
   height: auto;
-  margin: 40px 15%;
-  box-sizing: border-box;
+  margin: 40px 0;
+
+}
+/* akhir style untuk semua materi pada learning */
+
+
+/* style untuk materi javascript */
+.javascript .img-materi {
   transition-property: transform;
   transition: 0.3s;
 }
 
-.javascript .gbr-utama:hover {
+.javascript .img-materi:hover {
   transform: scale(1.015);
-}
-
-.javascript .sub-gbr {
-  max-width: 100%;
-  height: auto;
-  margin: 40px 25%;
-  box-sizing: border-box;
-}
-
-.javascript .gbr-kode-besar {
-  max-width: 100%;
-  height: auto;
-  margin: 40px 15%;
-  box-sizing: border-box;
-}
-
-.javascript .gbr-browser {
-  max-width: 100%;
-  height: auto;
-  margin: 40px 15%;
-  box-sizing: border-box;
-}
-
-.javascript .gbr-kode-kecil {
-  max-width: 100%;
-  height: auto;
-  box-sizing: border-box;
 }
 
 /* Akhir style untuk materi javascript */
@@ -413,15 +398,12 @@ footer {
 
 /* style untuk sumber belajar */
 
-.sumber-belajar .gambar {
-  max-width: 100%;
-  height: auto;
-  margin: 40px 25%;
+.sumber-belajar .img-materi {
   transition-property: transform;
   transition: 0.3s;
 }
 
-.sumber-belajar .gambar:hover {
+.sumber-belajar .img-materi:hover {
   transform: scale(1.025);
 }
 
@@ -446,29 +428,6 @@ footer {
 @media (max-width: 1150px) {
   .container-about {
     padding-left: 70px;
-  }
-
-  .javascript .gbr-utama {
-    max-width: 100%;
-    height: auto;
-    margin: 50px 0;
-    padding: 0 700px;
-    box-sizing: border-box;
-  }
-
-  .javascript .gbr-kode-besar {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 15%;
-    padding: 0 40px;
-    box-sizing: border-box;
-  }
-  .javascript .gbr-browser {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 0;
-    padding: 0 40px;
-    box-sizing: border-box;
   }
 }
 
@@ -563,59 +522,11 @@ footer {
 
   /* akhir responsive untuk semua materi learning */
 
-  /* responsive untuk materi javascript */
-  .javascript .gbr-utama {
-    max-width: 100%;
-    height: auto;
-    margin: 50px 0;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  .javascript .sub-gbr {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 0;
-    padding: 0 30px;
-    box-sizing: border-box;
-  }
-
-  .javascript .gbr-kode-besar {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 5%;
-    padding: 0 30px;
-    box-sizing: border-box;
-  }
-
-  .javascript .gbr-browser {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 0;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  .javascript .gbr-kode-kecil {
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-  }
-  /* Akhir responsive untuk materi javascript */
-
-
   /* responsive untuk materi sumber belajar */
   .sumber-belajar h1 {
     font-size: 25px;
   }
 
-  .sumber-belajar .gambar {
-    max-width: 100%;
-    height: auto;
-    margin: 50px 5%;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
   /* akhir responsive untuk materi sumber belajar */
 }
 
@@ -692,54 +603,11 @@ footer {
   
   /* akhir responsive untuk semua materi learning */
 
-  /* responsive untuk materi javascript */
-  .javascript .gbr-utama {
-    width: 100%;
-    height: auto;
-    padding: 0 8px;
-    box-sizing: border-box;
-  }
-
-  .javascript .sub-gbr {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 0;
-    padding: 0 12px;
-    box-sizing: border-box;
-  }
-
-  .javascript .gbr-kode-besar {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 0;
-    padding: 0 5px;
-    box-sizing: border-box;
-  }
-
-  .javascript .gbr-browser {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 0;
-    padding: 0 5px;
-    box-sizing: border-box;
-  }
-
-  .javascript .gbr-kode-kecil {
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-  }
-  /* Akhir responsive untuk materi javascript */
-
-
    /* responsive untuk materi sumber belajar */
    .sumber-belajar h1 {
     font-size: 18px;
   }
 
-   .sumber-belajar .gambar {
-    margin: 50px 0;
-  }
   /* akhir responsive untuk materi sumber belajar */
 }
 
