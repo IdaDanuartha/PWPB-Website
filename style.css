@@ -334,13 +334,17 @@ table tr td{
 }
 .table-container {
   margin: 40px auto;
-  padding: 10px;
-  width: 800px;
+  padding: 15px;
+  width: 70%;
   background-color: rgba(172, 171, 171, 0.95);
   color: black;
+  border-radius: 10px;
   
 }
 
+.table-container .profil-cadangan {
+  display: none;
+}
 .table-container h1 {
   text-align: center;
 }
@@ -361,7 +365,6 @@ table tr td img {
   padding-top: 15px;
   padding-right: 15px;
   transition: 0.3s;
-  transition-property: transform;
   color: #222;
 }
 
@@ -384,7 +387,7 @@ table tr td img {
 
 .container-materi .my-profile img {
   border-radius: 50%;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .container-materi .my-profile img:hover {
@@ -536,6 +539,17 @@ table tr td img {
     margin-top: 30%;
   }
 
+  .table-container {
+    width: 85%;
+    font-size: 12px;
+    padding: 20px;
+  }
+
+  .table-container img {
+    width: 110px;
+    height: auto;
+  }
+
 }
 
 @media (max-width: 575px) {
@@ -545,6 +559,10 @@ table tr td img {
 
   header {
     height: 100px;
+  }
+
+  header .nav a:nth-child(1){
+    margin-top: 50px;
   }
 
   /* Judul website */
@@ -591,4 +609,29 @@ table tr td img {
   }
   
   /* Akhir responsive untuk semua materi learning */
+
+  .table-container {
+    width: 90%;
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
+
+  .table-container img {
+    display: none;
+  }
+
+  table {
+    padding: 0;
+  }
+
+  .table-container .profil-cadangan {
+    display: block;
+    margin: 15px auto;
+  }
+
+  .table-container .get-touch a i {
+    font-size: 25px;
+  }
+
+
 }
