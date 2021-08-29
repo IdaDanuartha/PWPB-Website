@@ -297,8 +297,44 @@ a .card .konten .sub-judul {
 
 /* Contact */
 
+.contact {
+  width: 100%;
+  margin: 20px auto;
+  background-color: rgb(221, 219, 219);
+}
 
+.contact h1 {
+  text-align: center;
+}
 
+.contact h3, h4 {
+  text-align: center;
+  padding: 10px;
+}
+
+.contact table {
+  width: 100%;
+  margin: 20px;
+}
+
+.contact table a button {
+  width: 80px;
+  height: 30px;
+  background-color: rgb(25, 207, 25);
+  border: 2px solid rgb(25, 207, 25);
+  margin: 3px;
+  border-radius: 3px;
+  font-weight: 500;
+
+}
+
+.contact table a button:hover {
+  width: 80px;
+  height: 30px;
+  background-color: rgb(17, 151, 17);
+  border: rgb(17, 151, 17);
+  cursor: pointer;
+}
 /* Akhir Contact */
 
 /* Footer */
@@ -633,4 +669,7 @@ table tr td img {
   }
 
 
+  .contact h3, h4 {
+    font-size: 14px;
+  }
 }
