@@ -233,7 +233,6 @@ a .card .konten .sub-judul {
 .about {
   min-height: 500px;
   padding-bottom: 100px;
-  background-color: #eee;
 }
 .about h1 {
   text-align: center;
@@ -297,42 +296,50 @@ a .card .konten .sub-judul {
 
 /* Contact */
 
-.contact {
+.menu-contact {
   width: 100%;
   margin: 20px auto;
+  padding: 50px 0;
   background-color: rgb(221, 219, 219);
 }
 
-.contact h1 {
+.menu-contact h1 {
   text-align: center;
 }
 
-.contact h3, h4 {
+.menu-contact h3, h4 {
   text-align: center;
   padding: 10px;
 }
 
-.contact table {
-  width: 100%;
-  margin: 20px;
+.menu-contact table {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #999;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-.contact table a button {
+.menu-contact input, textarea {
+  width: 100%;
+}
+.menu-contact table a button {
   width: 80px;
   height: 30px;
-  background-color: rgb(25, 207, 25);
-  border: 2px solid rgb(25, 207, 25);
+  background-color: #444;
+  border: 2px solid #444;
   margin: 3px;
   border-radius: 3px;
   font-weight: 500;
+  color: white;
 
 }
 
-.contact table a button:hover {
+.menu-contact table a button:hover {
   width: 80px;
   height: 30px;
-  background-color: rgb(17, 151, 17);
-  border: rgb(17, 151, 17);
+  background-color: rgb(90, 90, 90);
+  border: rgb(90, 90, 90);
   cursor: pointer;
 }
 /* Akhir Contact */
@@ -668,8 +675,13 @@ table tr td img {
     font-size: 25px;
   }
 
+  .menu-contact table {
+    width: 95%;
+    margin:auto;
+    border-radius: 5px;
+  }
 
-  .contact h3, h4 {
+  .menu-contact h3, h4 {
     font-size: 14px;
   }
 }
