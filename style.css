@@ -485,6 +485,10 @@ table tr td img {
   color: rgb(158, 255, 215);
 }
 
+Img{
+  text-align: center; 
+  }
+
 /* akhir style untuk semua materi learning */
 
 /* style untuk  materi sumber belajar */
