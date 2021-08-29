@@ -240,11 +240,11 @@ a .card .konten .sub-judul {
   text-align: center;
 }
 
-.about .anggota {
+.about .container-about .anggota {
   width: 200px;
   border: 1px solid black;
   border-radius: 10px;
-  margin: 8px;
+  margin: 15px auto;
   padding: 15px;
   background-color: #444;
   color: white;
@@ -253,9 +253,9 @@ a .card .konten .sub-judul {
 .container-about {
   width: 90%;
   margin: 50px auto;
-  display: flex;
+  display: grid;
   text-align: center;
-  justify-content: space-around;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .about .container-about img {
@@ -287,7 +287,6 @@ a .card .konten .sub-judul {
 }
 .about p a i {
   transition: 0.3s;
-  transition-property: transform;
   color: #222;
 }
 
@@ -299,16 +298,20 @@ a .card .konten .sub-judul {
 
 /* Contact */
 
+
+
 /* Akhir Contact */
 
 /* Footer */
 
 footer {
   background-color: #222;
+  margin-top: 100px;
   color: white;
   height: 60px;
   text-align: center;
   line-height: 60px;
+  
 }
 
 /* Akhir Footer */
@@ -366,16 +369,11 @@ table tr td img {
   transform: scale(1.3);
 }
 
-
-/*Responsif Profil*/
-
-
-/*AkhirResponsif Profil*/
-
 /* Akhir Style profil */
 
-/* style untuk materi javascript */
-.container-js {
+
+/* style untuk semua materi learning */
+.container-materi {
   width: 80%;
   margin: 180px auto 50px auto;
   padding: 20px;
@@ -384,122 +382,74 @@ table tr td img {
   border-radius: 10px;
 }
 
-.container-js .my-profile img {
+.container-materi .my-profile img {
   border-radius: 50%;
+  transition: all 0.5s;
 }
 
-.container-js .my-profile {
+.container-materi .my-profile img:hover {
+  transform: scale(1.3) rotate(360deg);
+}
+
+.container-materi .my-profile {
   display: flex;
   padding: 10px;
 }
 
-.container-js .my-profile p {
+.container-materi .my-profile p {
   padding: 12px 12px;
 }
 
-.container-js .my-profile p a {
+.container-materi .my-profile p a {
   text-decoration: none;
   color: white;
 }
 
-.container-js .my-profile p a:hover {
+.container-materi .my-profile p a:hover {
   color: rgb(91, 91, 250);
   border-bottom: 1px solid rgb(91, 91, 250);
 }
 
-.container-js h1 {
+.container-materi h1 {
   font-size: 35px;
   padding-top: 15px;
 }
-.container-js hr {
+.container-materi hr {
+  width: 100%;
   margin: 30px 0;
 }
 
-.container-js .gbr-utama {
-  max-width: 100%;
+.container-materi .img-materi {
+  width: 90%;
   height: auto;
-  margin: 40px 15%;
-  box-sizing: border-box;
-  transition-property: transform;
-  transition: 0.3s;
+  margin: 40px auto;
 }
-
-.container-js .gbr-utama:hover {
-  transform: scale(1.015);
-}
-
-.container-js .sub-gbr {
-  max-width: 100%;
-  height: auto;
-  margin: 40px 25%;
-  box-sizing: border-box;
-}
-
-.container-js .gbr-kode-besar {
-  max-width: 100%;
-  height: auto;
-  margin: 40px 15%;
-  box-sizing: border-box;
-}
-
-.container-js .gbr-browser {
-  max-width: 100%;
-  height: auto;
-  margin: 40px 15%;
-  box-sizing: border-box;
-}
-
-.container-js .gbr-kode-kecil {
-  max-width: 100%;
-  height: auto;
-  box-sizing: border-box;
-}
-
-.container-js .tambahan a {
+.container-materi .tambahan a {
   text-decoration: none;
   color: rgb(31, 240, 153);
   padding-bottom: 5px;
 }
 
-.container-js .tambahan {
-  width: 160px;
-}
-
-.container-js .tambahan a li:hover {
+.container-materi .tambahan a li:hover {
   color: rgb(158, 255, 215);
 }
 
-.container-js .tambahan a *:active {
-  background-color: rgba(158, 255, 215, 0.4);
+/* akhir style untuk semua materi learning */
+
+/* style untuk  materi sumber belajar */
+
+.sumber-belajar a {
+  text-decoration: none;
+  color: rgb(31, 240, 153);
 }
-/* Akhir style untuk materi javascript */
+
+.sumber-belajar a:hover {
+  color: rgb(158, 255, 215);
+}
+/* akhir style untuk materi sumber belajar */
 
 /* Responsive styles */
 
-@media (max-width: 1150px) {
-  .container-js .gbr-utama {
-    max-width: 100%;
-    height: auto;
-    margin: 50px 0;
-    padding: 0 700px;
-    box-sizing: border-box;
-  }
-
-  .container-js .gbr-kode-besar {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 15%;
-    padding: 0 40px;
-    box-sizing: border-box;
-  }
-  .container-js .gbr-browser {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 0;
-    padding: 0 40px;
-    box-sizing: border-box;
-  }
-}
 
 @media (max-width: 960px) {
   header .nav {
@@ -580,50 +530,12 @@ table tr td img {
     margin-bottom: 50px;
   }
 
-  /* responsive untuk materi javascript */
-  .container-js {
+  
+  .container-materi {
     width: 90%;
     margin-top: 30%;
   }
 
-  .container-js .gbr-utama {
-    max-width: 100%;
-    height: auto;
-    margin: 50px 0;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  .container-js .sub-gbr {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 0;
-    padding: 0 30px;
-    box-sizing: border-box;
-  }
-
-  .container-js .gbr-kode-besar {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 5%;
-    padding: 0 30px;
-    box-sizing: border-box;
-  }
-
-  .container-js .gbr-browser {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 0;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  .container-js .gbr-kode-kecil {
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-  }
-  /* Akhir responsive untuk materi javascript */
 }
 
 @media (max-width: 575px) {
@@ -664,54 +576,19 @@ table tr td img {
     align-items: center;
   }
 
-  /* responsive untuk materi javascript */
-  .container-js {
+  /* responsive untuk semua materi learning */
+  .container-materi {
     width: 100%;
     margin-top: 0;
     border-radius: 0;
   }
 
-  .container-js .my-profile {
-    font-size: 15px;
+  .container-materi .my-profile {
+    font-size: 14px;
   }
-  .container-js h1 {
+  .container-materi h1 {
     font-size: 28px;
   }
-  .container-js .gbr-utama {
-    width: 100%;
-    height: auto;
-    padding: 0 8px;
-    box-sizing: border-box;
-  }
-
-  .container-js .sub-gbr {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 0;
-    padding: 0 12px;
-    box-sizing: border-box;
-  }
-
-  .container-js .gbr-kode-besar {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 0;
-    padding: 0 5px;
-    box-sizing: border-box;
-  }
-
-  .container-js .gbr-browser {
-    max-width: 100%;
-    height: auto;
-    margin: 40px 0;
-    padding: 0 5px;
-    box-sizing: border-box;
-  }
-
-  .container-js .gbr-kode-kecil {
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-  }
-  /* Akhir responsive untuk materi javascript */
+  
+  /* Akhir responsive untuk semua materi learning */
 }
