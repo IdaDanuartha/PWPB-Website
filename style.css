@@ -13,6 +13,7 @@ html {
 
 body {
   margin-top: 114px;
+  background-color: #eaeaea;
 }
 
 .home {
@@ -153,21 +154,21 @@ label {
   text-align: center;
 }
 
-.learning hr, .about hr {
+hr {
   width: 230px;
-  margin: 20px auto 50px auto;
-}
-
-.container {
-  width: 90%;
-  margin: 50px auto;
-  display: flex;
-  text-align: center;
+  margin: 10px auto;
+  margin: 20px 0 50px 0;
 }
 
 .learning .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.container {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  text-align: center;
 }
 
 .learning .container a {
@@ -187,7 +188,6 @@ a .card .konten .sub-judul {
   font-weight: bold;
   font-size: 18px;
 }
-
 .card .gambar img {
   width: 95%;
   height: 140px;
@@ -232,7 +232,7 @@ a .card .konten .sub-judul {
 
 /* About */
 .about {
-  min-height: 550px;
+  min-height: 500px;
   padding-bottom: 100px;
   background-color: #eee;
 }
@@ -253,11 +253,9 @@ a .card .konten .sub-judul {
 .container-about {
   width: 90%;
   margin: 50px auto;
-  padding-left: 100px;
+  display: flex;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  grid-gap: 25px;
+  justify-content: space-around;
 }
 
 .about .container-about img {
@@ -301,8 +299,6 @@ a .card .konten .sub-judul {
 
 /* Contact */
 
-
-
 /* Akhir Contact */
 
 /* Footer */
@@ -310,123 +306,198 @@ a .card .konten .sub-judul {
 footer {
   background-color: #222;
   color: white;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
 }
 
 /* Akhir Footer */
 
+/* Style profil */
+.profil {
+  margin-top: 140px;
+}
 
-/* style untuk semua materi pada learning */
-.container-materi {
+table {
+  margin-top: 20px;
+  margin-bottom: -60px;
+
+}
+
+table tr td{
+  padding: 9px;
+  padding-bottom: 0px;
+
+}
+.table-container {
+  margin: 40px auto;
+  padding: 10px;
+  width: 800px;
+  background-color: rgba(172, 171, 171, 0.95);
+  color: black;
+  
+}
+
+.table-container h1 {
+  text-align: center;
+}
+
+table tr td img {
+  display: block;
+  border-radius: 5% ;
+  border-color: white;
+  margin-right: 30px;
+  border: 2px;
+}
+
+.get-touch p {
+ text-align: center;
+}
+.table-container  a i {
+  font-size: 30px;
+  padding-top: 15px;
+  padding-right: 15px;
+  transition: 0.3s;
+  transition-property: transform;
+  color: #222;
+}
+
+.table-container  a i:hover {
+  transform: scale(1.3);
+}
+
+
+/*Responsif Profil*/
+
+
+/*AkhirResponsif Profil*/
+
+/* Akhir Style profil */
+
+/* style untuk materi javascript */
+.container-js {
   width: 80%;
   margin: 180px auto 50px auto;
-  padding: 30px;
+  padding: 20px;
   background-color: #444;
   color: white;
   border-radius: 10px;
 }
 
+.container-js .my-profile img {
+  border-radius: 50%;
+}
 
-.my-profile {
+.container-js .my-profile {
   display: flex;
   padding: 10px;
 }
 
-.my-profile img {
-  border-radius: 50%;
-  transition: 0.8s;
+.container-js .my-profile p {
+  padding: 12px 12px;
 }
 
-.my-profile img:hover {
-  transform: scale(1.5) rotate(360deg);
-}
-
-.my-profile p {padding: 12px 12px;}
-
-.my-profile p a {
+.container-js .my-profile p a {
   text-decoration: none;
   color: white;
 }
 
-.my-profile p a:hover {
+.container-js .my-profile p a:hover {
   color: rgb(91, 91, 250);
   border-bottom: 1px solid rgb(91, 91, 250);
 }
 
-.container-materi h1 {
+.container-js h1 {
   font-size: 35px;
   padding-top: 15px;
 }
+.container-js hr {
+  margin: 30px 0;
+}
 
-.container-materi hr {margin: 40px 0;}
+.container-js .gbr-utama {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 15%;
+  box-sizing: border-box;
+  transition-property: transform;
+  transition: 0.3s;
+}
 
-.container-materi .tambahan a {
+.container-js .gbr-utama:hover {
+  transform: scale(1.015);
+}
+
+.container-js .sub-gbr {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 25%;
+  box-sizing: border-box;
+}
+
+.container-js .gbr-kode-besar {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 15%;
+  box-sizing: border-box;
+}
+
+.container-js .gbr-browser {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 15%;
+  box-sizing: border-box;
+}
+
+.container-js .gbr-kode-kecil {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.container-js .tambahan a {
   text-decoration: none;
   color: rgb(31, 240, 153);
   padding-bottom: 5px;
 }
 
-.container-materi .tambahan a li:hover {
+.container-js .tambahan {
+  width: 160px;
+}
+
+.container-js .tambahan a li:hover {
   color: rgb(158, 255, 215);
 }
 
-.container-materi .img-materi {
-  max-width: 100%;
-  height: auto;
-  margin: 40px 0;
-
+.container-js .tambahan a *:active {
+  background-color: rgba(158, 255, 215, 0.4);
 }
-/* akhir style untuk semua materi pada learning */
-
-
-/* style untuk materi javascript */
-.javascript .img-materi {
-  transition-property: transform;
-  transition: 0.3s;
-}
-
-.javascript .img-materi:hover {
-  transform: scale(1.015);
-}
-
 /* Akhir style untuk materi javascript */
-
-
-/* style untuk sumber belajar */
-
-.sumber-belajar .img-materi {
-  transition-property: transform;
-  transition: 0.3s;
-}
-
-.sumber-belajar .img-materi:hover {
-  transform: scale(1.025);
-}
-
-.sumber-belajar a {
-  color: white;
-  text-decoration: none;
-  color: rgb(31, 240, 153);
-}
-
-.sumber-belajar a:hover {
-    color: rgb(158, 255, 215);
-}
-
-/* Akhir style untuk sumber belajar */
-
-
-
-
 
 /* Responsive styles */
 
 @media (max-width: 1150px) {
-  .container-about {
-    padding-left: 70px;
+  .container-js .gbr-utama {
+    max-width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 0 700px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-kode-besar {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 15%;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .container-js .gbr-browser {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 40px;
+    box-sizing: border-box;
   }
 }
 
@@ -509,24 +580,50 @@ footer {
     margin-bottom: 50px;
   }
 
-  .container-about {
-    padding-left: 50px;
-  }
-
-  /* responsive untuk semua materi learning */
-  .container-materi {
+  /* responsive untuk materi javascript */
+  .container-js {
     width: 90%;
     margin-top: 30%;
   }
 
-  /* akhir responsive untuk semua materi learning */
-
-  /* responsive untuk materi sumber belajar */
-  .sumber-belajar h1 {
-    font-size: 25px;
+  .container-js .gbr-utama {
+    max-width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
-  /* akhir responsive untuk materi sumber belajar */
+  .container-js .sub-gbr {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-kode-besar {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 5%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-browser {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-kode-kecil {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+  /* Akhir responsive untuk materi javascript */
 }
 
 @media (max-width: 575px) {
@@ -558,8 +655,7 @@ footer {
   }
 
   .learning .container {
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
   }
 
   footer {
@@ -568,51 +664,54 @@ footer {
     align-items: center;
   }
 
-  .container-about {
-    grid-gap: 10px;
-    padding: 0;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
-
-  /* responsive untuk semua materi learning */
-  .container-materi {
+  /* responsive untuk materi javascript */
+  .container-js {
     width: 100%;
     margin-top: 0;
     border-radius: 0;
   }
 
-  .container-materi .my-profile {
+  .container-js .my-profile {
     font-size: 15px;
   }
-
-  .container-materi .my-profile p {
-    font-size: 12px;
+  .container-js h1 {
+    font-size: 28px;
   }
-  .container-materi h1 {
-    font-size: 25px;
-  }
-
-  .container-materi .tambahan h2 {
-    font-size: 20px;
+  .container-js .gbr-utama {
+    width: 100%;
+    height: auto;
+    padding: 0 8px;
+    box-sizing: border-box;
   }
 
-  .container-materi p {
-    font-size: 14px;
-  }
-  
-  /* akhir responsive untuk semua materi learning */
-
-   /* responsive untuk materi sumber belajar */
-   .sumber-belajar h1 {
-    font-size: 18px;
+  .container-js .sub-gbr {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 12px;
+    box-sizing: border-box;
   }
 
-  /* akhir responsive untuk materi sumber belajar */
-}
-
-
-@media (max-width: 475px) {
-  .container-about {
-    padding: 0 15%;
+  .container-js .gbr-kode-besar {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 5px;
+    box-sizing: border-box;
   }
+
+  .container-js .gbr-browser {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  .container-js .gbr-kode-kecil {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+  /* Akhir responsive untuk materi javascript */
 }
