@@ -4,271 +4,311 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Belajar HTML</title>
+    
 </head>
 <body>
 
-<div class="container">
-    <h1>Pengenalan Dasar HTML untuk Pemula</h1>
+    <!-- navbar -->
+    <section class="html">
+        <input type="checkbox" id="check">
+        <header>
+            <h2 class="logo"><i class="fas fa-code"></i></h2>
+            <div class="nav">
+                <a href="landing-page.html"><i class="fas fa-home"></i> Home</a>
+                <a href="landing-page.html"><i class="fab fa-leanpub"></i> Learning</a>
+                <a href="landing-page.html"><i class="fas fa-users"></i> About Us</a>
+                <a href="landing-page.html"><i class="fas fa-phone-alt"></i> Contact</a>
+            </div>
+            <label for="check">
+                <i class="fas fa-bars open"></i>
+                <i class="fas fa-times close"></i>
+            </label>
+        </header>
+    </section>
+    <!-- akhir navbar -->
 
-    <p>HTML memang bahasa yang wajib dipelajari, bagi yang mau menjadi 
-    web developer.<br> Karena…HTML merupakan bahasa dasar untuk membuat web.</p>
+    <div class="container-materi materi-html">
+        <div class="my-profile">
+            <img src="img/profil-prama.jpeg" alt="profil Penulis" width="45x" height="45px">
+            <p><a href="https://github.com/PramantaDharma"><b>Prama</b></a> • Penulis Artikel • 23 Agustus 2021 </p>
+        </div>
 
-    <h2>Apa itu HTML?</h2>
-    <p><b>Menurut Wikipedia :</b></p>
-    <p>HTML atau HyperText Markup Language merupakan sebuah bahasa markah 
-    untuk membuat halaman web.<br> Jadi, HTML itu adalah sebuah bahasa yang
-    menggunakan markup atau penanda untuk membuat halaman web.<br> Penanda 
-    atau markup ini, nanti akan kita sebut dengan Tag.<br> HTML berperan 
-    untuk menentukan struktur konten dan tampilan dari sebuah web.<br>
-    Kalau kita ibaratkan nih..</p> HTML itu seperti batu bata untuk 
-    membangun rumah. Batu bata ini dapat disusun, hingga menjadi fondasi 
-    dasar.</p>
-    <img src="img/bata rumah html-css-js.png" alt="HTML, CSS, dan JavaScript">
+        <h1>Pengenalan Dasar HTML untuk Pemula</h1>
+        <hr>
+        <p>HTML memang bahasa yang wajib dipelajari, bagi yang mau menjadi 
+        web developer. Karena…HTML merupakan bahasa dasar untuk membuat web.</p><br><br>
 
-    <p>Dalam membuat halaman web, HTML tidak sendirian. Ada bahasa lain 
-    lagi yang menjadi pelengkapnya, yakni CSS dan Javascript.</br>
-    CSS adalah bahasa khusus yang digunakan untuk memperindah tampilan web.</br>
-    Lalu Javascript bertugas untuk membuat halaman web menjadi hidup. 
-    Karena dengan Javascript, kita dapat menentukan fungsi-fungsi maupun
-    efek yang akan diterapkan di website.</p>
-    <br>
+        <h2>Apa itu HTML?</h2><br>
+        <p><b>Menurut Wikipedia :</b></p>
+        <p>HTML atau HyperText Markup Language merupakan sebuah bahasa markah 
+        untuk membuat halaman web. Jadi, HTML itu adalah sebuah bahasa yang
+        menggunakan markup atau penanda untuk membuat halaman web. Penanda 
+        atau markup ini, nanti akan kita sebut dengan Tag.<br><br> HTML berperan 
+        untuk menentukan struktur konten dan tampilan dari sebuah web.
+        Kalau kita ibaratkan nih.. HTML itu seperti batu bata untuk 
+        membangun rumah. Batu bata ini dapat disusun, hingga menjadi fondasi 
+        dasar.</p><br>
+        <img class="img-materi" src="img/bata rumah html-css-js.png" alt="HTML, CSS, dan JavaScript"><br><br>
 
-    <h2>Sejarah dan Asal-usul HTML</h2>
-    <p>Cerita awal kemunculan HTML dimulai dari tahun 1980..
-    Saat itu seorang ilmuan bernama Tim Berners-Lee sedang bekerja di CERN.</p>
-    <img src="img/TimBerners.jpg" alt="Tim Berners-Lee">
-    <p>CERN sendiri bukanlah perusahaan yang berkaitan tentang teknologi 
-    maupun internet. CERN adalah singkatan dari bahasa prancis: Conseil
-    Européen pour la Recherche Nucléaire. Yang artinya: Komisi Eropa untuk 
-    Penelitian Fisika Nuklir.</p>
-    <br>
-
-    <p>Para peneliti di CERN membutuhkan sebuah cara atau sistem agar bisa
-     saling berbagi dokumen hasil penelitian.</br> Tim kemudian mencoba 
-     membuat ENQUIRE. Ini adalah software hypertext yang akan digunakan 
-     untuk berbagi dokumen.</br> Lalu di tahun 1989, Tim memperkenalkan 
-     ide tentang hypertext berbasis internet. Ini nantinya akan menjadi 
-     cikal-bakal HTML.</p>
-    <br>
-
-    <p>Tim kemudian memulai proyek baru dengan rekannya Robert Cailliau 
-    yang merupakan system engineer di CERN. Akan tetapi proyek ini 
-    tidak resmi diadopsi oleh CERN.</br> Pada akhir tahun 1991, Tim Berners-Lee 
-    menerbitkan dokumen yang berjudul: “HTML Tags”.<br> Dokumen ini berisi
-    penjelasan tentang 18 tags awal yang menjadi konsep dasar HTML.</p>
-    <br>
-
-    <p>HTML sebenarnya dirancang berdasarkan pada konsep bahasa markup yang
-    dikenal dengan SGML (Standard Generalized Markup Language).</br>
-    SGML adalah sebauah standar internasional untuk membuat dokumen 
-    dengan tanda (markup) seperti paragraf, list, heading, dan lain-lain.</p>
-    <br>
-    
-    <p>Bisa dibilang..<br>
-    HTML adalah implementasi dari SGML.</br>
-    Kalau kita lihat, beberapa tag seperti <code>&lt;title&gt;</code> ,
-    <code>&lt;p&gt;</code>, <code>&lt;li&gt;</code>, dan 
-    <code>&lt;h1&gt;</code> sampai <code>&lt;h6&gt;</code> 
-    berasal dari SGML. Namun, tidak semua yang ada di HTML berasal dari 
-    SGML.</p>
-
-    <p>Salah satunya adalah Hyperlink, yang murni hasil pemikiran Tim 
-    Berners-Lee.<br> Ide tentang HTML ini kemudian disebarkan ke dalam 
-    sebuah mailing list dan segera menjadi perhatian berbagai ilmuwan 
-    komputer di seluruh dunia.</p>
-    <br>
-
-    <h2>Perkembangan dan Versi HTML</h2>
-    <p>HTML punya beberapa versi, dari versi yang paling tua hingga yang terbaru. Berikut ini perkembangan versi HTML:</p>
-    <ol>
-        <li>[Draft] HTML 1.0 (Juni 1993) adalah versi HTML pertama, namun tidak resmi dirilis;</li>
-        <li>HTML 2.0 (24 November 1995) adalah versi HTML kedua yang resmi pertamakali beredar di pasaran dan dirilis oleh IETF;</li>
-        <li>[Draft] HTML 3.0 (28 Maret 1995) versi ini gagal beredar, karena banyak perubahan yang memicu perdebatan;</li>
-        <li>HTML 3.2 (14 Januari 1997) versi resmi yang dirilis W3C pertamakali.</li>
-        <li>HTML 4.0 (24 April 1998) versi pengembangan dari yang seblumnya;</li>
-        <li>HTML 4.01 (24 Desember 1999) versi perbaikan dari HTML 4.0;</li>
-        <li>XHTML 1.0 (26 Januari 2000) pengembangan dari HTML 4.01 dengan mengadopsi XML;</li>
-        <li>XHTML 2.0 (Augustus 2002—Juli 2006) versi kedua dari XHTML;</li>
-        <li>HTML 5 (28 Oktober 2014) versi html saat ini.</li>
-    </ol>
-    <br>
-
-    <p>Versi [draft] adalah versi yang tidak resmi dirilis ke pasaran. 
-    Bentuknya cuma masih dalam draft speksifikasi saja.</br>
-    Artinya tidak ada yang menggunakan versi [draft] untuk membuat web.</br>
-    Lalu, versi mana yang akan kita pakai? Tentunya versi terbaru, yakni 
-    HTML 5.</p>
-    <br>
-
-    <h2>Peralatan untuk Belajar HTML</h2>
-    <ol>
-        <li><strong>Teks Editor untuk Menulis HTML</strong></li>
-        <p>Teks editor akan kita gunakan untuk menulis kode-kode HTML. 
-        Kamu bebas menggunakan teks editor apapun.</br> Notepad boleh, 
-        Notepad++ juga boleh. Apapun teks editornya, yang penting bisa 
-        digunakan untuk membuat dan menulis dokumen HTML.</p>
-        <img src="img/notepadpp++.png" alt="Gambar Notepad++">
-
-        <br>
-
-        <li><strong>Web Browser untuk Membuka HTML</strong></li>
-        <p>Web browser akan kita gunakan untuk membuka HTML. Kamu juga 
-        bebas menggunakan web browser apapun.<br> Saran saya sih.. gunakan web 
-        browser yang terbaru, karena kita juga akan menggunakan HTML versi 
-        yang terbaru.</p>
-        <img src="img/webBrowser.png" alt="Web Browser">
-        <p>Firefox atau Google Chrome, saya kira sudah cukup</p>
-
-    </ol>
-    <br>
-
-    <h2>Membuat Dokumen HTML Pertamamu!</h2>
-    <p>Kini tiba saatnya, kamu harus mencoba sendiri membuat dokumen HTML. 
-    Caranya sangat mudah.<br> Mari kita mulai dengan membuat hello world 
-    pada teks editor.</p>
-    <img src="img/helloworld.png" alt="Contoh Program Hello World">
-
-    <p>Setelah itu, simpan dengan nama hello-world.html.</p>
-    <img src="img/simpanfile.png" alt="Simpan File">
-
-    <p>Sekarang cobalah buka file hello-world.html dengan web browser.. maka hasilnya:<p>
-    <img src="img/outputhasil.png" alt="Output dari Hello World">
-    <br>
-
-    <p>Selamat! 🎉</p>
-    <p>Kita sudah berhasil membuat halaman web pertama dengan HTML.</p>
-    <br>
-
-    <h2>Nama File untuk HTML</h2>
-    <p>Ada beberapa hal yang perlu diperhatikan dalam membuat nama file HTML:</p>
-
-    <ol>
-        <li><strong>Extensi file HTML</strong></li>
-        <p>Setiap file HTML harus berekstensi .html, .xhtml (untuk XHTML),
-        dan .htm saja. Jika tidak menggunakan ekstensi ini, maka ia tidak
-        akan bisa dibaca oleh web browser.</p>
-        <br>
-
-        <p>Contohnya seperti ini:</p>
-        <p>Nama filenya adalah hello-world.txt.</p>
-        <img src="img/filesalah.png" alt="Nama File HTML yang salah">
-        <p>Sudah jelas, ini bukan file HTML, melainkan sebuah file teks 
-        biasa. Maka.. browser akan menampilkan isi file tersebut apa adanya.</p>
-
-        <li><strong>Nama Khusus untuk Homepage</strong></li>
-        <p>Jika kamu ingin membuat halaman untuk homepage, maka sebaiknya gunakan nama index.html. Karena ia akan otomatis dibuka saat website dikunjungi.</p>
-
-        <li><strong>Hindari Beberapa Hal ini..</strong></li>
-        <ul type="disc">
-            <li><h4>Penggunaan Spasi</h4></li>
-            <p> Nama file HTML biasanya akan tercantum pada URL, maka 
-            sebaiknya hindari menggunakan spasi pada nama file HTML, agar 
-            URL yang dibentuk lebih bagus.<br> Spasi pada URL, biasanya 
-            akan otomatis diubah menjadi %20.</p>
-            <img src="img/spasiurl.png" alt="Spasi URL">
-
-            <p>Sebagai ganti spasi, kamu bisa gunakan tanda min (-) atau 
-            undescore ( _ ).</p>
-
-            <li><h4>Jangan Alay!</h4></li>
-            <p>Berikanlah nama file HTML dengan file yang biasa, hindari 
-            menggunakan huruf besar, campuran dari huruf besar dan kecil,
-            dan juga menggunakan simbol.</p>
-            <p>Contoh:</p>
-        </ul>
-        <ul type="square">
-            <li>HeLLoWORLD.html</li>
-            <li>da*#$.html</li>
-            <p>Meskipun nama ini bisa valid, tapi kurang bagus untuk dibaca.. 
-            baik oleh manusia, maupun mesin. Gunakan saja bahasa yang formal.</p>
-       </ul>
-       <br>
-
-    <h2>Struktur Dasar HTML</h2>
-    <p>Berikut ini adalah kode HTML :</p>
-    <img src="img/strukturhtml.png" alt="Struktur Dasar HTML">
-
-    <p>Penulisan kode HTML selalu dimulai dengan deklarasi DOCTYPE, 
-    lalu menuliskan tag <code>&lt;html&gt;</code> dan di dalamnya terdapat
-    tag <code>&lt;head&gt;</code> dan <code>&lt;body&gt;</code></p>
-
-    <p>Kalau kita perhatikan.. struktur dasar kode HTML terdiri dari tiga bagian penting:</p>
-    <ol>
-        <li>Bagian Deklarasi</li>
-        <li>Bagian HEAD</li>
-        <li>Bagian BODY</li>
-    </ol>
-
-    <p>Mari kita bahas satu-per-satu:</p>
-
-    <ol>
-        <li><b>Bagian Deklarasi</b></li>
-        <p>Coba perhatikan kode pada baris pertama: 
-        <code><b>&lt;!DOCTYPE html&gt;</b></code>.</p>
-
-        <p>Ini adalah tag deklarasi untuk menyatakan tipe dokumen dan 
-        versinya. Pada contoh di atas, kita menyatakan dokumen ini bertipe 
-        HTML dan versinya adalah HTML 5.</p>
-        <br>
-
-        <p>Nah, untuk HTML versi 4.. beda lagi cara deklarasinya.<br>
-        Contoh untuk HTML 4.01:<br><br>
-
-        <code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code>
+        <p>Dalam membuat halaman web, HTML tidak sendirian. Ada bahasa lain 
+        lagi yang menjadi pelengkapnya, yakni CSS dan Javascript.
+        CSS adalah bahasa khusus yang digunakan untuk memperindah tampilan web.
+        Lalu Javascript bertugas untuk membuat halaman web menjadi hidup. 
+        Karena dengan Javascript, kita dapat menentukan fungsi-fungsi maupun
+        efek yang akan diterapkan di website.</p>
         <br><br>
 
-        Cukup panjang bukan..</p>
-
-        <p>Lalu apakah boleh kita tidak menulis kode <code>&lt;!DOCTYPE html&gt;
-        </code>> ini?<br> boleh-boleh saja.. dokumen HTML-nya akan tetap
-        bisa dibuka di web browser. Tapi, ini tentunya akan melanggar 
-        aturan standar yang dibuat W3C.</p>
+        <h2>Sejarah dan Asal-usul HTML</h2><br>
+        <p>Cerita awal kemunculan HTML dimulai dari tahun 1980..
+        Saat itu seorang ilmuan bernama Tim Berners-Lee sedang bekerja di CERN.</p><br>
+        <img class="img-materi" src="img/TimBerners.jpg" alt="Tim Berners-Lee"><br><br>
+        <p>CERN sendiri bukanlah perusahaan yang berkaitan tentang teknologi 
+        maupun internet. CERN adalah singkatan dari bahasa prancis: Conseil
+        Européen pour la Recherche Nucléaire. Yang artinya: Komisi Eropa untuk 
+        Penelitian Fisika Nuklir.</p>
         <br>
 
-        <p>Berikutnya, di bawah tag deklarasi <code>&lt;!DOCTYPE html&gt;
-        </code> terdapat tag pembuka untuk HTML:</p>
-        <p>Tag <code>&lt;html&gt;</code> wajib ada di setiap dokumen HTML..</p>
-        Pada tag ini, kita memberikan atribut lang="en" untuk menyatakan 
-        kalau konten dokumen HTML ini akan menggunakan bahasa inggris.<br>
-        Nah di dalam tag <code>&lt;html&gt;</code> ini, terdapat dua tag 
-        penting lagi.. yakni: tag <code>&lt;head&gt;</code> dan tag 
-        <code>&lt;body&gt;</code>.<br> Setelah itu barulah terakhir tag 
-        HTML ditutup dengan <code>&lt;/html&gt;</code>.</p>
-
-        <li><b>Bagian HEAD</b></li>
-        <p>Bagian HEAD adalah bagian kepala dari HTML. Dimulai dari tag 
-        <code>&lt;head&gt;</code> dan ditutup dengan <code>&lt;/head&gt;</code>
+        <p>Para peneliti di CERN membutuhkan sebuah cara atau sistem agar bisa
+        saling berbagi dokumen hasil penelitian. Tim kemudian mencoba 
+        membuat ENQUIRE. Ini adalah software hypertext yang akan digunakan 
+        untuk berbagi dokumen. Lalu di tahun 1989, Tim memperkenalkan 
+        ide tentang hypertext berbasis internet. Ini nantinya akan menjadi 
+        cikal-bakal HTML.</p>
         <br>
 
-        <p>Pada bagian HEAD, biasanya digunakan untuk menuliskan tag-tag 
-        yang akan dibaca oleh mesin.</p>
+        <p>Tim kemudian memulai proyek baru dengan rekannya Robert Cailliau 
+        yang merupakan system engineer di CERN. Akan tetapi proyek ini 
+        tidak resmi diadopsi oleh CERN. Pada akhir tahun 1991, Tim Berners-Lee 
+        menerbitkan dokumen yang berjudul: “HTML Tags”. Dokumen ini berisi
+        penjelasan tentang 18 tags awal yang menjadi konsep dasar HTML.</p>
+        <br>
 
-        <p>Seperti:</p>
-        <ul>
-            <li>Tag meta untuk SEO;</li>
-            <li>Tag <code>&lt;title&gt;</code> untuk judul;</li>
-            <li>Tempat menulis kode CSS dan Javascript;</li>
-            <li>dan lain-lain.</li>
+        <p>HTML sebenarnya dirancang berdasarkan pada konsep bahasa markup yang
+        dikenal dengan SGML (Standard Generalized Markup Language).
+        SGML adalah sebauah standar internasional untuk membuat dokumen 
+        dengan tanda (markup) seperti paragraf, list, heading, dan lain-lain.</p>
+        <br>
+        
+        <p>Bisa dibilang..<br><br>
+        HTML adalah implementasi dari SGML.
+        Kalau kita lihat, beberapa tag seperti <code>&lt;title&gt;</code> ,
+        <code>&lt;p&gt;</code>, <code>&lt;li&gt;</code>, dan 
+        <code>&lt;h1&gt;</code> sampai <code>&lt;h6&gt;</code> 
+        berasal dari SGML. Namun, tidak semua yang ada di HTML berasal dari 
+        SGML.</p><br>
+
+        <p>Salah satunya adalah Hyperlink, yang murni hasil pemikiran Tim 
+        Berners-Lee. Ide tentang HTML ini kemudian disebarkan ke dalam 
+        sebuah mailing list dan segera menjadi perhatian berbagai ilmuwan 
+        komputer di seluruh dunia.</p>
+        <br><br>
+
+        <h2>Perkembangan dan Versi HTML</h2>
+        <p>HTML punya beberapa versi, dari versi yang paling tua hingga yang terbaru. Berikut ini perkembangan versi HTML:</p><br>
+        <ol>
+            <li>[Draft] HTML 1.0 (Juni 1993) adalah versi HTML pertama, namun tidak resmi dirilis;</li>
+            <li>HTML 2.0 (24 November 1995) adalah versi HTML kedua yang resmi pertamakali beredar di pasaran dan dirilis oleh IETF;</li>
+            <li>[Draft] HTML 3.0 (28 Maret 1995) versi ini gagal beredar, karena banyak perubahan yang memicu perdebatan;</li>
+            <li>HTML 3.2 (14 Januari 1997) versi resmi yang dirilis W3C pertamakali.</li>
+            <li>HTML 4.0 (24 April 1998) versi pengembangan dari yang seblumnya;</li>
+            <li>HTML 4.01 (24 Desember 1999) versi perbaikan dari HTML 4.0;</li>
+            <li>XHTML 1.0 (26 Januari 2000) pengembangan dari HTML 4.01 dengan mengadopsi XML;</li>
+            <li>XHTML 2.0 (Augustus 2002—Juli 2006) versi kedua dari XHTML;</li>
+            <li>HTML 5 (28 Oktober 2014) versi html saat ini.</li>
+        </ol>
+        <br>
+
+        <p>Versi [draft] adalah versi yang tidak resmi dirilis ke pasaran. 
+        Bentuknya cuma masih dalam draft speksifikasi saja.</br><br>
+        Artinya tidak ada yang menggunakan versi [draft] untuk membuat web.</br>
+        Lalu, versi mana yang akan kita pakai? Tentunya versi terbaru, yakni 
+        HTML 5.</p>
+        <br><br>
+
+        <h2>Peralatan untuk Belajar HTML</h2><br>
+        <ol>
+            <li><strong>Teks Editor untuk Menulis HTML</strong></li>
+            <p>Teks editor akan kita gunakan untuk menulis kode-kode HTML. 
+            Kamu bebas menggunakan teks editor apapun.</br> Notepad boleh, 
+            Notepad++ juga boleh. Apapun teks editornya, yang penting bisa 
+            digunakan untuk membuat dan menulis dokumen HTML.</p><br>
+            <img class="img-materi" src="img/notepadpp++.png" alt="Gambar Notepad++"><br><br>
+
+            <li><strong>Web Browser untuk Membuka HTML</strong></li>
+            <p>Web browser akan kita gunakan untuk membuka HTML. Kamu juga 
+            bebas menggunakan web browser apapun.<br> Saran saya sih.. gunakan web 
+            browser yang terbaru, karena kita juga akan menggunakan HTML versi 
+            yang terbaru.</p><br>
+            <img class="img-materi" src="img/webBrowser.png" alt="Web Browser"><br><br>
+            <p>Firefox atau Google Chrome, saya kira sudah cukup</p>
+
+        </ol>
+        <br><br>
+
+        <h2>Membuat Dokumen HTML Pertamamu!</h2><br>
+        <p>Kini tiba saatnya, kamu harus mencoba sendiri membuat dokumen HTML. 
+        Caranya sangat mudah.<br> Mari kita mulai dengan membuat hello world 
+        pada teks editor.</p><br>
+        <img class="img-materi" src="img/helloworld.png" alt="Contoh Program Hello World"><br><br>
+
+        <p>Setelah itu, simpan dengan nama hello-world.html.</p><br>
+        <img class="img-materi" src="img/simpanfile.png" alt="Simpan File"><br><br>
+
+        <p>Sekarang cobalah buka file hello-world.html dengan web browser.. maka hasilnya:<p><br>
+        <img class="img-materi" src="img/outputhasil.png" alt="Output dari Hello World"><br><br>
+        <br>
+
+        <h3>Selamat! 🎉</h3><br>
+        <p>Kita sudah berhasil membuat halaman web pertama dengan HTML.</p><br>
+        <br><br>
+
+        <h2>Nama File untuk HTML</h2>
+        <p>Ada beberapa hal yang perlu diperhatikan dalam membuat nama file HTML:</p><br>
+
+        <ol>
+            <li><strong>Extensi file HTML</strong></li>
+            <p>Setiap file HTML harus berekstensi .html, .xhtml (untuk XHTML),
+            dan .htm saja. Jika tidak menggunakan ekstensi ini, maka ia tidak
+            akan bisa dibaca oleh web browser.</p>
+            <br>
+
+            <p>Contohnya seperti ini:</p>
+            <p>Nama filenya adalah hello-world.txt.</p><br>
+            <img class="img-materi" src="img/filesalah.png" alt="Nama File HTML yang salah"><br><br>
+            <p>Sudah jelas, ini bukan file HTML, melainkan sebuah file teks 
+            biasa. Maka.. browser akan menampilkan isi file tersebut apa adanya.</p><br>
+
+            <li><strong>Nama Khusus untuk Homepage</strong></li>
+            <p>Jika kamu ingin membuat halaman untuk homepage, maka sebaiknya gunakan nama index.html. Karena ia akan otomatis dibuka saat website dikunjungi.</p><br>
+
+            <li><strong>Hindari Beberapa Hal ini..</strong></li><br>
+            <ul type="disc">
+                <li><h4>Penggunaan Spasi</h4></li>
+                <p> Nama file HTML biasanya akan tercantum pada URL, maka 
+                sebaiknya hindari menggunakan spasi pada nama file HTML, agar 
+                URL yang dibentuk lebih bagus. Spasi pada URL, biasanya 
+                akan otomatis diubah menjadi %20.</p><br>
+                <img class="img-materi" src="img/spasiurl.png" alt="Spasi URL"><br><br>
+
+                <p>Sebagai ganti spasi, kamu bisa gunakan tanda min (-) atau 
+                undescore ( _ ).</p><br>
+
+                <li><h4>Jangan Alay!</h4></li>
+                <p>Berikanlah nama file HTML dengan file yang biasa, hindari 
+                menggunakan huruf besar, campuran dari huruf besar dan kecil,
+                dan juga menggunakan simbol.</p><br>
+                <p>Contoh:</p><br>
+            </ul>
+            <ul type="square">
+                <li>HeLLoWORLD.html</li>
+                <li>da*#$.html</li><br>
+                <p>Meskipun nama ini bisa valid, tapi kurang bagus untuk dibaca.. 
+                baik oleh manusia, maupun mesin. Gunakan saja bahasa yang formal.</p>
         </ul>
-        <br>
-        <li><b>Bagian BODY</b></li>
-        <p>Bagian BODY adalah bagian yang akan ditampilkan pada web browser.<br>
-         Penulisannya di mulai dari tag <code>&lt;body&gt;</code> dan ditutup 
-         dengan <code>&lt;/body&gt;</code>.</p>
-         <br>
+        <br><br>
 
-        <img src="img/strukturhtml.png" alt="Bagian BODY">
-    </ol>
+        <h2>Struktur Dasar HTML</h2>
+        <p>Berikut ini adalah kode HTML :</p><br>
+        <img class="img-materi" src="img/strukturhtml.png" alt="Struktur Dasar HTML"><br><br>
 
-    <p>Di sinilah nanti kita akan banyak menuliskan konten dengan berbagai
-    macam tag. Saat ini kita baru mengisinya dengan tag <code>&lt;p&gt;</code>.<br> 
-    Tag <code>&lt;p&gt;</code> adalah tag yang digunakan untuk membuat paragraf.</p>
+        <p>Penulisan kode HTML selalu dimulai dengan deklarasi DOCTYPE, 
+        lalu menuliskan tag <code>&lt;html&gt;</code> dan di dalamnya terdapat
+        tag <code>&lt;head&gt;</code> dan <code>&lt;body&gt;</code></p><br>
 
-    <p>Nah, sampai disini dulu tutorial html dasar untuk pemula, semoga ilmu yang
-    saya bagikan bisa berguna untuk kalian semua. </p>
+        <p>Kalau kita perhatikan.. struktur dasar kode HTML terdiri dari tiga bagian penting:</p><br>
+        <ol>
+            <li>Bagian Deklarasi</li>
+            <li>Bagian HEAD</li>
+            <li>Bagian BODY</li>
+        </ol>
 
-    <a href="landing-page.html"><p>Kembali ke halaman utama</p></a>
+        <p>Mari kita bahas satu-per-satu:</p><br>
+
+        <ol>
+            <li><b>Bagian Deklarasi</b></li>
+            <p>Coba perhatikan kode pada baris pertama: 
+            <code><b>&lt;!DOCTYPE html&gt;</b></code>.</p>
+
+            <p>Ini adalah tag deklarasi untuk menyatakan tipe dokumen dan 
+            versinya. Pada contoh di atas, kita menyatakan dokumen ini bertipe 
+            HTML dan versinya adalah HTML 5.</p>
+            <br>
+
+            <p>Nah, untuk HTML versi 4.. beda lagi cara deklarasinya.<br>
+            Contoh untuk HTML 4.01:<br><br>
+
+            <code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code>
+            <br><br>
+
+            Cukup panjang bukan..</p>
+
+            <p>Lalu apakah boleh kita tidak menulis kode <code>&lt;!DOCTYPE html&gt;<br>
+            </code>> ini?<br> boleh-boleh saja.. dokumen HTML-nya akan tetap
+            bisa dibuka di web browser. Tapi, ini tentunya akan melanggar 
+            aturan standar yang dibuat W3C.</p>
+            <br>
+
+            <p>Berikutnya, di bawah tag deklarasi <code>&lt;!DOCTYPE html&gt;
+            </code> terdapat tag pembuka untuk HTML:</p>
+            <p>Tag <code>&lt;html&gt;</code> wajib ada di setiap dokumen HTML..</p><br>
+            Pada tag ini, kita memberikan atribut lang="en" untuk menyatakan 
+            kalau konten dokumen HTML ini akan menggunakan bahasa inggris.<br>
+            Nah di dalam tag <code>&lt;html&gt;</code> ini, terdapat dua tag 
+            penting lagi.. yakni: tag <code>&lt;head&gt;</code> dan tag 
+            <code>&lt;body&gt;</code>.<br> Setelah itu barulah terakhir tag 
+            HTML ditutup dengan <code>&lt;/html&gt;</code>.</p><br>
+
+            <li><b>Bagian HEAD</b></li>
+            <p>Bagian HEAD adalah bagian kepala dari HTML. Dimulai dari tag 
+            <code>&lt;head&gt;</code> dan ditutup dengan <code>&lt;/head&gt;</code> Pada 
+            bagian HEAD, biasanya digunakan untuk menuliskan tag-tag 
+            yang akan dibaca oleh mesin.</p><br>
+
+            <p>Seperti:</p>
+            <ul>
+                <li>Tag meta untuk SEO;</li>
+                <li>Tag <code>&lt;title&gt;</code> untuk judul;</li>
+                <li>Tempat menulis kode CSS dan Javascript;</li>
+                <li>dan lain-lain.</li>
+            </ul>
+            <br>
+            <li><b>Bagian BODY</b></li>
+            <p>Bagian BODY adalah bagian yang akan ditampilkan pada web browser.<br>
+            Penulisannya di mulai dari tag <code>&lt;body&gt;</code> dan ditutup 
+            dengan <code>&lt;/body&gt;</code>.</p>
+            <br>
+
+            <img class="img-materi" src="img/strukturhtml.png" alt="Bagian BODY"><br><br>
+        </ol>
+
+        <p>Di sinilah nanti kita akan banyak menuliskan konten dengan berbagai
+        macam tag. Saat ini kita baru mengisinya dengan tag <code>&lt;p&gt;</code>.<br> 
+        Tag <code>&lt;p&gt;</code> adalah tag yang digunakan untuk membuat paragraf.</p><br>
+
+        <p>Nah, sampai disini dulu tutorial html dasar untuk pemula, semoga ilmu yang
+        saya bagikan bisa berguna untuk kalian semua. </p>
+        <hr>
+        
+        <!-- Tambahan -->
+        <div class="tambahan">
+            <h2>Baca dan Pelajari juga : </h2><br>
+            <ul>
+                <a href="Materi CSS.html"><li>Belajar CSS Dasar</li></a>
+                <a href="javascript.html"><li>Belajar Javascript Dasar</li></a>
+                <a href="sumber-belajar.html"><li>Sumber Belajar Lain</li></a>
+            </ul>
+           </div>
+        <!-- Akhir tambahan -->
+
     </div>
+
+    <!-- footer -->
+    <footer>
+        <p>Copyright © 2021. | Built by Wisnu - Chesa - Prama - Danu</p>
+    </footer>
+    <!-- akhir footer -->
  </body>
 </html>
