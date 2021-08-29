@@ -149,6 +149,7 @@ label {
 /* Learning */
 .learning {
   min-height: 700px;
+  padding-top: 130px;
 }
 .learning h1 {
   text-align: center;
@@ -232,6 +233,7 @@ a .card .konten .sub-judul {
 /* About */
 .about {
   min-height: 500px;
+  padding-top: 130px;
   padding-bottom: 100px;
 }
 .about h1 {
@@ -299,7 +301,7 @@ a .card .konten .sub-judul {
 .menu-contact {
   width: 100%;
   margin: 20px auto;
-  padding: 50px 0;
+  padding: 130px 0 50px;
   background-color: rgb(221, 219, 219);
 }
 
@@ -322,6 +324,10 @@ a .card .konten .sub-judul {
 
 .menu-contact input, textarea {
   width: 100%;
+}
+
+.menu-contact input {
+  height: 30px;
 }
 .menu-contact table a button {
   width: 80px;
