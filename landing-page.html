@@ -169,17 +169,18 @@
                     <td><input type="text" name="Nama" size="23" placeholder=" Masukkan nama"></td>
                 </tr>
                 <tr>
+                    <td><br>Email</td>
+                <tr>
+                <tr>
+                    <td><input type="text" name="Email" placeholder="Masukkan alamat email"></td>
+                </tr>
+                <tr>
                     <td><br>Asal Sekolah</td>
                 </tr>
                 <tr>
                     <td><input type="text" name="Sekolah" size="23" placeholder=" Masukkan asal sekolah"></td>
                 </tr>
-                <tr>
-                    <td><br>Tanggal (Hari ini)</td>
-                <tr>
-                <tr>
-                    <td><input type="date" name="tanggal"></td>
-                </tr>
+                
                     <td><br>Komentar</td>
                 </tr>
                 <tr>
@@ -188,7 +189,7 @@
                 </tr>
                     <td>
                         <br>
-                        <a class="kirim" href=""><button type="submit">Kirim</button></a>
+                        <a href=""><button type="submit">Kirim</button></a>
                         <a href=""><button type="reset">Batal</button></a>
                     </td>
                 </tr>
@@ -209,18 +210,16 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyBX_sctZEGYtNbiZw10PLmdwOHh7XoRY9t-q0wFVROJA_1W0HjT8plve8JKIzbbyjV/exec'
         const form = document.forms['kelompok8-contact-form']
-        const kirim = document.querySelector(".kirim");
 
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-
-        kirim.addEventListener('click', function() {
-            alert("Terimakasih, komentar anda sangat berguna bagi website kami untuk kedepannya.");
-
+            .then((response) => {
+                alert("Terimakasih, pesan anda sudah terkirim!.");
+                form.reset();
+                console.log('Success!', response);
+            })
+            .catch(error => console.error('Error!', error.message));
         });
 
       </script>
