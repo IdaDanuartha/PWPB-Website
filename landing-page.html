@@ -172,7 +172,7 @@
                     <td><br>Email</td>
                 <tr>
                 <tr>
-                    <td><input type="text" name="Email" placeholder="Masukkan alamat email"></td>
+                    <td><input type="email" name="Email" placeholder="Masukkan alamat email"></td>
                 </tr>
                 <tr>
                     <td><br>Asal Sekolah</td>
@@ -189,7 +189,10 @@
                 </tr>
                     <td>
                         <br>
-                        <a href=""><button type="submit">Kirim</button></a>
+                        <a href=""><button class="btn-kirim" type="submit">Kirim</button></a>
+                        <button class="btn-loading d-none" id="btn-loading">
+                            <div class="spinner"></div>
+                        </button>
                         <a href=""><button type="reset">Batal</button></a>
                     </td>
                 </tr>
@@ -210,12 +213,28 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyBX_sctZEGYtNbiZw10PLmdwOHh7XoRY9t-q0wFVROJA_1W0HjT8plve8JKIzbbyjV/exec'
         const form = document.forms['kelompok8-contact-form']
+        const btnKirim = document.querySelector(".btn-kirim");
+        const btnLoading = document.querySelector(".btn-loading");
+        const disableBtn = document.getElementById("btn-loading");
+
+        disableBtn.disabled = true;
 
         form.addEventListener('submit', e => {
           e.preventDefault()
+         // menampilkan tombol loading, lalu hilangkan tombol kirim
+          btnLoading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then((response) => {
+                // menampilkan tombol kirim, lalu hilangkan tombol loading
+                btnLoading.classList.toggle('d-none');
+                btnKirim.classList.toggle('d-none');
+
+                // menampilkan alert
                 alert("Terimakasih, pesan anda sudah terkirim!.");
+
+                // reset formnya
                 form.reset();
                 console.log('Success!', response);
             })
