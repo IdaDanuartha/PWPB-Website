@@ -439,7 +439,7 @@ table tr td img {
 }
 
 .container-materi .my-profile img:hover {
-  transform: scale(1.3) rotate(360deg);
+  transform: scale(1.4) rotate(360deg);
 }
 
 .container-materi .my-profile {
@@ -484,10 +484,6 @@ table tr td img {
 .container-materi .tambahan a li:hover {
   color: rgb(158, 255, 215);
 }
-
-Img{
-  text-align: center; 
-  }
 
 /* akhir style untuk semua materi learning */
 
