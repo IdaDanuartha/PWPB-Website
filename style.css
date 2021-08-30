@@ -365,7 +365,7 @@ a .card .konten .sub-judul {
   border-radius: 50%;
   border: 2px solid white;
   border-top-color: rgb(90, 90, 90);
-  margin: 3px auto;
+  margin: -3px auto;
   animation: spinner 0.8s linear infinite;
 }
 
