@@ -160,19 +160,19 @@
         <h4>Komentar anda sangat membantu kami agar situs kami bisa lebih baik lagi. </h4>
         <br>
 
-        <form action="" method="POST">
+        <form action="" method="POST" name="kelompok8-contact-form">
             <table>
                 <tr>
                     <td>Nama</td>
                 </tr>
                 <tr>
-                    <td><input type="text" name="nama" size="23" placeholder=" Masukkan nama"></td>
+                    <td><input type="text" name="Nama" size="23" placeholder=" Masukkan nama"></td>
                 </tr>
                 <tr>
                     <td><br>Asal Sekolah</td>
                 </tr>
                 <tr>
-                    <td><input type="text" name="sklh" size="23" placeholder=" Masukkan asal sekolah"></td>
+                    <td><input type="text" name="Sekolah" size="23" placeholder=" Masukkan asal sekolah"></td>
                 </tr>
                 <tr>
                     <td><br>Tanggal (Hari ini)</td>
@@ -183,12 +183,12 @@
                     <td><br>Komentar</td>
                 </tr>
                 <tr>
-                    <td><textarea cols="25" rows="6" placeholder=" Masukkan komentar anda"></textarea></td>
+                    <td><textarea cols="25" rows="6" name="Komentar" placeholder=" Masukkan komentar anda"></textarea></td>
                 </tr>
                 </tr>
                     <td>
                         <br>
-                        <a href=""><button type="submit">Kirim</button></a>
+                        <a class="kirim" href=""><button type="submit">Kirim</button></a>
                         <a href=""><button type="reset">Batal</button></a>
                     </td>
                 </tr>
@@ -204,5 +204,25 @@
     </footer>
     <!-- akhir footer -->
     
+
+    <!-- Script untuk contact form -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyBX_sctZEGYtNbiZw10PLmdwOHh7XoRY9t-q0wFVROJA_1W0HjT8plve8JKIzbbyjV/exec'
+        const form = document.forms['kelompok8-contact-form']
+        const kirim = document.querySelector(".kirim");
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+
+        kirim.addEventListener('click', function() {
+            alert("Terimakasih, komentar anda sangat berguna bagi website kami untuk kedepannya.");
+
+        });
+
+      </script>
 </body>
 </html>
