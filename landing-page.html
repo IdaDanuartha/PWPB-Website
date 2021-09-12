@@ -32,7 +32,7 @@
         <div class="content">
             <div class="info">
                 <h2>Learn Basic<br><span>Web Programming</span></h2>
-                <p>Website untuk mempelajari HTML, CSS dan Javascript.</p>
+                <p>Website to learn basic HTML, CSS and Javascript</p>
             </div>
             <div class="icon">
 
@@ -44,7 +44,7 @@
     </section>
 
     <!-- Learning -->
-    <div id="learning" class="learning">
+    <div id="learning" class="learning effect">
         <h1><i class="fab fa-leanpub"></i> Learning</h1>
         <hr>
         <div class="container">
@@ -95,7 +95,7 @@
     <!-- Akhir Learning -->
 
     <!-- About -->
-    <div id="about" class="about">
+    <div id="about" class="about effect">
         <h1><i class="fas fa-users"></i> About Us</h1>
         <hr>
         <div class="container-about">
@@ -148,7 +148,7 @@
     <!-- Akhir About -->
 
     <!-- Contact -->
-    <div id="contact" class="menu-contact">
+    <div id="contact" class="menu-contact effect">
         <h1><i class="fas fa-phone-alt"></i> Contact</h1>
         <hr>
 
@@ -166,25 +166,25 @@
                     <td>Nama</td>
                 </tr>
                 <tr>
-                    <td><input type="text" name="Nama" size="23" placeholder=" Masukkan nama"></td>
+                    <td><input type="text" name="Nama" size="23" placeholder="Nama anda" required autocomplete="off"></td>
                 </tr>
                 <tr>
                     <td><br>Email</td>
                 <tr>
                 <tr>
-                    <td><input type="email" name="Email" placeholder="Masukkan alamat email"></td>
+                    <td><input type="email" name="Email" placeholder="Email anda" required autocomplete="off"></td>
                 </tr>
                 <tr>
                     <td><br>Asal Sekolah</td>
                 </tr>
                 <tr>
-                    <td><input type="text" name="Sekolah" size="23" placeholder=" Masukkan asal sekolah"></td>
+                    <td><input type="text" name="Sekolah" size="23" placeholder="Asal sekolah anda" required autocomplete="off"></td>
                 </tr>
                 
                     <td><br>Komentar</td>
                 </tr>
                 <tr>
-                    <td><textarea cols="25" rows="6" name="Komentar" placeholder=" Masukkan komentar anda"></textarea></td>
+                    <td><textarea cols="25" rows="6" name="Komentar" placeholder="Pesan yang ingin disampaikan" required></textarea></td>
                 </tr>
                 </tr>
                     <td>
@@ -210,37 +210,7 @@
     
 
     <!-- Script untuk contact form -->
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyBX_sctZEGYtNbiZw10PLmdwOHh7XoRY9t-q0wFVROJA_1W0HjT8plve8JKIzbbyjV/exec'
-        const form = document.forms['kelompok8-contact-form']
-        const btnKirim = document.querySelector(".btn-kirim");
-        const btnLoading = document.querySelector(".btn-loading");
-        const disableBtn = document.getElementById("btn-loading");
+    <script src="js/script.js"></script>
 
-        disableBtn.disabled = true;
-
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-         // menampilkan tombol loading, lalu hilangkan tombol kirim
-          btnLoading.classList.toggle('d-none');
-          btnKirim.classList.toggle('d-none');
-
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then((response) => {
-                // menampilkan tombol kirim, lalu hilangkan tombol loading
-                btnLoading.classList.toggle('d-none');
-                btnKirim.classList.toggle('d-none');
-
-                // menampilkan alert
-                alert("Terimakasih, pesan anda sudah terkirim!.");
-
-                // reset formnya
-                form.reset();
-                console.log('Success!', response);
-            })
-            .catch(error => console.error('Error!', error.message));
-        });
-
-      </script>
 </body>
 </html>
