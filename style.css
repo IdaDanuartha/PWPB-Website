@@ -256,7 +256,6 @@ a .card .konten .sub-judul {
 
 .about .container-about .anggota {
   width: 200px;
-  border: 1px solid black;
   border-radius: 10px;
   margin: 15px auto;
   padding: 15px;
@@ -521,9 +520,9 @@ table tr td img {
 }
 
 .container-materi .img-materi {
-  width: 90%;
+  width: 70%;
   height: auto;
-  margin: 40px auto;
+  margin: 40px 10%;
 }
 .container-materi .tambahan a {
   text-decoration: none;
