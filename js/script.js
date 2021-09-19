@@ -31,7 +31,6 @@ form.addEventListener('submit', e => {
 });
 
 
-
 // membuat efek ketika website di scroll
 window.addEventListener('scroll', effect);
 
